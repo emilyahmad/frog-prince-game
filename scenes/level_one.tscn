@@ -1,10 +1,62 @@
-[gd_scene load_steps=2 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=7 format=3 uid="uid://dkygou7pffnkk"]
 
-[ext_resource type="Texture2D" uid="uid://dyjl0mqxv3676" path="res://assets/tinyfrog.webp" id="1_cd1xg"]
+[ext_resource type="Texture2D" uid="uid://ccvu0qpqkdg8p" path="res://assets/levels/grass.png" id="1_843q2"]
+[ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
+[ext_resource type="Texture2D" uid="uid://3i5d7gbb5g0q" path="res://assets/levels/water.png" id="2_5rfim"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
+size = Vector2(411, 319.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_843q2"]
+size = Vector2(412, 137)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhu28"]
+size = Vector2(975.5, 319.6)
 
 [node name="LevelOne" type="Node2D"]
 
-[node name="Tinyfrog" type="Sprite2D" parent="."]
-position = Vector2(306, 925)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_cd1xg")
+[node name="Terr1" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Terr1"]
+position = Vector2(205.5, 413)
+scale = Vector2(0.214, 0.682)
+texture = ExtResource("1_843q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terr1"]
+position = Vector2(205.5, 413.2)
+shape = SubResource("RectangleShape2D_r4wdr")
+
+[node name="Plat1" type="StaticBody2D" parent="."]
+position = Vector2(736, -302)
+
+[node name="Sprite2D" type="Sprite2D" parent="Plat1"]
+position = Vector2(207, 498)
+scale = Vector2(0.214, 0.292)
+texture = ExtResource("1_843q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plat1"]
+position = Vector2(209, 498)
+shape = SubResource("RectangleShape2D_843q2")
+
+[node name="Water1" type="StaticBody2D" parent="."]
+position = Vector2(411, 19)
+
+[node name="Sprite2D" type="Sprite2D" parent="Water1"]
+position = Vector2(488.65, 446)
+scale = Vector2(0.509, 0.457)
+texture = ExtResource("2_5rfim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Water1"]
+position = Vector2(487, 499)
+shape = SubResource("RectangleShape2D_bhu28")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 265.0
+offset_top = 144.0
+offset_right = 474.0
+offset_bottom = 193.0
+text = "You should try to complete
+this level without dying lol"
+
+[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(275, 203)
