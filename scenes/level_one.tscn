@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=12 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="Texture2D" uid="uid://ccvu0qpqkdg8p" path="res://assets/levels/grass.png" id="1_843q2"]
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
@@ -7,56 +7,191 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
 size = Vector2(411, 319.6)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5rfim"]
+size = Vector2(864.5, 168.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p75b"]
+size = Vector2(644, 184)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8ti4"]
+size = Vector2(862, 133.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_843q2"]
 size = Vector2(412, 137)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhu28"]
 size = Vector2(975.5, 319.6)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_astit"]
+size = Vector2(728.571, 180.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5wbv"]
+size = Vector2(3836, 215)
+
 [node name="LevelOne" type="Node2D"]
 
-[node name="Terr1" type="StaticBody2D" parent="."]
+[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(275, 203)
 
-[node name="Sprite2D" type="Sprite2D" parent="Terr1"]
+[node name="Labels" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = 407.0
+offset_top = 87.0
+offset_right = 616.0
+offset_bottom = 136.0
+text = "start level 1:
+don't jump in the water"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 1679.0
+offset_top = 35.0
+offset_right = 1888.0
+offset_bottom = 84.0
+text = "reach flies here"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 2912.0
+offset_top = -21.0
+offset_right = 3121.0
+offset_bottom = 28.0
+text = "bounce off lilypad here"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 3901.0
+offset_top = 59.0
+offset_right = 4110.0
+offset_bottom = 108.0
+text = "avoid croc head here"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 4841.0
+offset_top = 60.0
+offset_right = 5076.0
+offset_bottom = 109.0
+text = "reach level 1/checkpoint here"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="Terr1" type="StaticBody2D" parent="Ground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Terr1"]
 position = Vector2(205.5, 413)
 scale = Vector2(0.214, 0.682)
 texture = ExtResource("1_843q2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Terr1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Terr1"]
 position = Vector2(205.5, 413.2)
 shape = SubResource("RectangleShape2D_r4wdr")
 
-[node name="Plat1" type="StaticBody2D" parent="."]
+[node name="Terr2" type="StaticBody2D" parent="Ground"]
+position = Vector2(1388, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Terr2"]
+position = Vector2(205.5, 413)
+scale = Vector2(0.214, 0.682)
+texture = ExtResource("1_843q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Terr2"]
+position = Vector2(205.5, 413.2)
+shape = SubResource("RectangleShape2D_r4wdr")
+
+[node name="Terr3" type="StaticBody2D" parent="Ground"]
+position = Vector2(1800, -96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Terr3"]
+position = Vector2(431, 435)
+scale = Vector2(0.45, 0.682)
+texture = ExtResource("1_843q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Terr3"]
+position = Vector2(430.75, 359.75)
+shape = SubResource("RectangleShape2D_5rfim")
+
+[node name="Terr5" type="StaticBody2D" parent="Ground"]
+position = Vector2(4269, -47)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Terr5"]
+position = Vector2(961, 506)
+texture = ExtResource("1_843q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Terr5"]
+position = Vector2(-1244, 396)
+shape = SubResource("RectangleShape2D_4p75b")
+
+[node name="Terr4" type="StaticBody2D" parent="Ground"]
+position = Vector2(3346, -38)
+scale = Vector2(0.5, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Terr4"]
+position = Vector2(431, 435)
+scale = Vector2(0.45, 0.682)
+texture = ExtResource("1_843q2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Terr4"]
+position = Vector2(432, 342)
+shape = SubResource("RectangleShape2D_y8ti4")
+
+[node name="Plat1" type="StaticBody2D" parent="Ground"]
 position = Vector2(736, -302)
 
-[node name="Sprite2D" type="Sprite2D" parent="Plat1"]
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Plat1"]
 position = Vector2(207, 498)
 scale = Vector2(0.214, 0.292)
 texture = ExtResource("1_843q2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Plat1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Plat1"]
 position = Vector2(209, 498)
 shape = SubResource("RectangleShape2D_843q2")
 
-[node name="Water1" type="StaticBody2D" parent="."]
+[node name="Water1" type="StaticBody2D" parent="Ground"]
 position = Vector2(411, 19)
 
-[node name="Sprite2D" type="Sprite2D" parent="Water1"]
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Water1"]
 position = Vector2(488.65, 446)
 scale = Vector2(0.509, 0.457)
 texture = ExtResource("2_5rfim")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Water1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Water1"]
 position = Vector2(487, 499)
 shape = SubResource("RectangleShape2D_bhu28")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 265.0
-offset_top = 144.0
-offset_right = 474.0
-offset_bottom = 193.0
-text = "You should try to complete
-this level without dying lol"
+[node name="Water2" type="StaticBody2D" parent="Ground"]
+position = Vector2(2663, -82)
+scale = Vector2(0.7, 1)
 
-[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
-position = Vector2(275, 203)
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Water2"]
+position = Vector2(488.65, 446)
+scale = Vector2(0.509, 0.457)
+texture = ExtResource("2_5rfim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Water2"]
+position = Vector2(1954.29, 425.25)
+shape = SubResource("RectangleShape2D_astit")
+
+[node name="Water3" type="StaticBody2D" parent="Ground"]
+position = Vector2(3778, -86)
+scale = Vector2(0.5, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground/Water3"]
+position = Vector2(488.65, 446)
+scale = Vector2(0.509, 0.457)
+texture = ExtResource("2_5rfim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Water3"]
+position = Vector2(2902, 418.5)
+shape = SubResource("RectangleShape2D_o5wbv")
