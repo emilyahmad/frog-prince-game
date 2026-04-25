@@ -14,6 +14,9 @@ var direction = 0
 #sync project settings gravity with rigid body nodes
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _on_bounce_pad_body_entered(body: Node2D) -> void:
+	velocity.y = jump_power * jump_multiplier
+
 func _input(event):
 	#if event.is_action_pressed("quit") and is_on_floor():
 		#get_tree().quit()
