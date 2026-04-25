@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=24 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="Texture2D" uid="uid://ccvu0qpqkdg8p" path="res://assets/levels/grass.png" id="1_843q2"]
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
@@ -36,9 +36,14 @@ size = Vector2(3836, 215)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s6ikc"]
 size = Vector2(489, 433.5)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4p75b"]
-radius = 50.0
-height = 314.279
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrbqg"]
+size = Vector2(204.314, 75.7448)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dv7nr"]
+size = Vector2(85, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgrt7"]
+size = Vector2(50.7529, 22.6212)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r4wdr"]
 radius = 54.0
@@ -240,10 +245,18 @@ position = Vector2(4044, 158)
 texture = ExtResource("2_bhu28")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/CrocHead"]
-position = Vector2(-38, 31)
-rotation = -1.20346
-scale = Vector2(1, 1)
-shape = SubResource("CapsuleShape2D_4p75b")
+position = Vector2(-88.7524, 19.9792)
+rotation = 0.367178
+shape = SubResource("RectangleShape2D_xrbqg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprites/CrocHead"]
+position = Vector2(64.5, 55.5)
+shape = SubResource("RectangleShape2D_dv7nr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprites/CrocHead"]
+position = Vector2(-28, -11)
+rotation = 0.364483
+shape = SubResource("RectangleShape2D_lgrt7")
 
 [node name="Fly" type="Area2D" parent="Sprites"]
 
@@ -276,5 +289,6 @@ texture = ExtResource("7_4p75b")
 position = Vector2(-2, 25.875)
 shape = SubResource("RectangleShape2D_036lt")
 
+[connection signal="body_entered" from="Sprites/CrocHead" to="." method="_on_croc_head_body_entered"]
 [connection signal="body_entered" from="Sprites/Fly" to="." method="_on_fly_body_entered"]
 [connection signal="body_entered" from="Sprites/BouncePad" to="." method="_on_bounce_pad_body_entered"]
