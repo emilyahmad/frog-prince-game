@@ -44,9 +44,8 @@ height = 314.279
 radius = 54.0
 height = 108.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bhu28"]
-radius = 89.0
-height = 188.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlxio"]
+size = Vector2(189, 68)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_036lt"]
 size = Vector2(191, 226.25)
@@ -264,8 +263,8 @@ scale = Vector2(0.84, 0.84)
 texture = ExtResource("5_r4wdr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/BouncePad"]
-position = Vector2(3019, 271)
-shape = SubResource("CapsuleShape2D_bhu28")
+position = Vector2(3019, 221)
+shape = SubResource("RectangleShape2D_nlxio")
 
 [node name="EndSign" type="Area2D" parent="Sprites"]
 position = Vector2(4737, 121)
@@ -278,4 +277,4 @@ position = Vector2(-2, 25.875)
 shape = SubResource("RectangleShape2D_036lt")
 
 [connection signal="body_entered" from="Sprites/Fly" to="." method="_on_fly_body_entered"]
-[connection signal="body_entered" from="Sprites/BouncePad" to="Player" method="_on_bounce_pad_body_entered"]
+[connection signal="body_entered" from="Sprites/BouncePad" to="." method="_on_bounce_pad_body_entered"]

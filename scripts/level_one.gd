@@ -12,4 +12,13 @@ func _process(delta: float) -> void:
 
 
 func _on_fly_body_entered(body: Node2D) -> void:
-	print("works")
+	print("stamina+")
+
+
+# when hit croc:
+# fade to black,
+# wait .5 sec
+# restart (add checkpoints for longer rounds)
+
+func _on_bounce_pad_body_entered(body: Node2D) -> void:
+	GameState.bounce = true
