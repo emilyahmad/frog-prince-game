@@ -1,6 +1,10 @@
 extends Node2D
 
 var bounce = false
+var sunk = false
+var sink = false
+
+var action_scene = false
 
 #var sink = false
 @onready var muted = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dicx2s6ig7w11"]
+[gd_scene load_steps=19 format=3 uid="uid://dicx2s6ig7w11"]
 
 [ext_resource type="Texture2D" uid="uid://bm2pfuoq8dqtm" path="res://assets/obstacles/sin/Intro-background.png" id="1_s2ta7"]
 [ext_resource type="Script" uid="uid://cyqoicweh6vbu" path="res://intro.gd" id="1_y6ycx"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d3464u8p4odjk" path="res://assets/lilypad.png" id="5_dk2oa"]
 [ext_resource type="Texture2D" uid="uid://ccgd3umhl31bs" path="res://assets/hover-lilypad.png" id="6_7ufi4"]
 [ext_resource type="PackedScene" uid="uid://dteo4tl24vbsk" path="res://mushroom.tscn" id="8_dpxxx"]
+[ext_resource type="PackedScene" uid="uid://5h5ecyaeckwu" path="res://sinking_lily.tscn" id="9_dk2oa"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h0kys"]
 
@@ -138,9 +139,6 @@ position = Vector2(950, 902)
 position = Vector2(1174, 844)
 scale = Vector2(0.15, 0.15)
 
-[node name="Player" parent="." instance=ExtResource("2_u2rf6")]
-position = Vector2(287, 827)
-
 [node name="EndArea" type="StaticBody2D" parent="."]
 
 [node name="Area2D" type="Area2D" parent="EndArea"]
@@ -154,5 +152,11 @@ shape = SubResource("RectangleShape2D_h0kys")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EndArea"]
 position = Vector2(106, 49)
 shape = SubResource("RectangleShape2D_d0rr7")
+
+[node name="SinkingLily" parent="." instance=ExtResource("9_dk2oa")]
+position = Vector2(1613, 924)
+
+[node name="Player" parent="." instance=ExtResource("2_u2rf6")]
+position = Vector2(287, 827)
 
 [connection signal="body_entered" from="EndArea/Area2D" to="." method="_on_area_2d_body_entered"]

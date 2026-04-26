@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://k53xlsvdeh3l"]
+
+[ext_resource type="Texture2D" uid="uid://bmpluldssjjqi" path="res://assets/endscene/c1.png" id="1_3wcc1"]
+[ext_resource type="Script" uid="uid://e2ccc3b3x23q" path="res://end_scene.gd" id="1_jvrxn"]
+
+[node name="EndScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jvrxn")
+
+[node name="Bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -48.0
+offset_top = -131.0
+offset_right = 1944.0
+offset_bottom = 1177.0
+texture = ExtResource("1_3wcc1")
+expand_mode = 1

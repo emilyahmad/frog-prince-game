@@ -46,7 +46,7 @@ func play_next():
 	
 	if (currentIndex == 3):
 #		# go to next scene
-		SceneTransition.change_scene("res://scenes/level_one.tscn")
+		SceneTransition.change_scene("res://intro.tscn")
 	else:
 		currentIndex += 1
 		
