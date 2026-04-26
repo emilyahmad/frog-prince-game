@@ -10,9 +10,20 @@ var exposition: Array[String] = [
 	"Yea"
 ]
 
+var expo_photos: Array[String] = [
+	"res://addons/expo-photos/expo1.png",
+	"res://addons/expo-photos/expo2.png",
+	"res://addons/expo-photos/expo3.png",
+	"res://addons/expo-photos/expo4.png"
+]
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$SlideLabel.text = exposition[0]
+	$TextureRect.texture = load(expo_photos[0])
+	
+	$SlideLabel.position = Vector2(308, 56)
+	$SkipTextButton.position = Vector2(1492, 42)
 
 	var stylebox = StyleBoxTexture.new()
 	stylebox.texture = preload("res://assets/wooden.png")
@@ -32,14 +43,26 @@ func _skip_text():
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length, true)
 		
 func play_next():
-# hardcoded to 4, may change to array size
+	
 	if (currentIndex == 3):
 #		# go to next scene
 		SceneTransition.change_scene("res://scenes/level_one.tscn")
 	else:
 		currentIndex += 1
+		
 		print(currentIndex)
 		$SlideLabel.text = exposition[currentIndex]
+		$TextureRect.texture = load(expo_photos[currentIndex])
+
+	if (currentIndex > 0 && currentIndex < 2):
+		print(currentIndex)
+		$SlideLabel.position = Vector2(308, 793)
+		$SkipTextButton.position = Vector2(1492, 779)
+	
+	if (currentIndex == 3):
+		$SlideLabel.position = Vector2(308, 56)
+		$SkipTextButton.position = Vector2(1492, 42)
+	# hardcoded to 4, may change to array size
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

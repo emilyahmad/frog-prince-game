@@ -39,7 +39,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 8.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.155, 0.155)
+scale = Vector2(0.151424, 0.155)
 sprite_frames = SubResource("SpriteFrames_b26j0")
 animation = &"new_animation"
 autoplay = "new_animation"

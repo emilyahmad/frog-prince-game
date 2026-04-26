@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxpjuqihq3uoj"]
 
 [ext_resource type="Script" uid="uid://0t6ui3ypejgu" path="res://scripts/exposition.gd" id="1_u3jjx"]
-[ext_resource type="Texture2D" uid="uid://cqlitjki3q706" path="res://assets/expositionSlide.png" id="2_n5nf8"]
+[ext_resource type="Texture2D" uid="uid://dbihda7de4a2e" path="res://addons/expo-photos/expo4.png" id="2_imb4w"]
 [ext_resource type="FontFile" uid="uid://bqiheds8xk5t7" path="res://assets/Radley-Regular.ttf" id="3_n5nf8"]
 [ext_resource type="Script" uid="uid://c1652qtxr6h7" path="res://typing.gd" id="4_imb4w"]
 [ext_resource type="Texture2D" uid="uid://d3464u8p4odjk" path="res://assets/lilypad.png" id="4_nc0m0"]
@@ -41,9 +41,11 @@ script = ExtResource("1_u3jjx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1410.0
+offset_right = 1902.22
 offset_bottom = 1070.0
-texture = ExtResource("2_n5nf8")
+texture = ExtResource("2_imb4w")
+expand_mode = 3
+stretch_mode = 3
 
 [node name="SlideLabel" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(1288, 254)
@@ -53,10 +55,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -646.0
-offset_top = -290.0
-offset_right = 642.0
-offset_bottom = -36.0
+offset_left = -652.0
+offset_top = -287.0
+offset_right = 636.0
+offset_bottom = -33.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/normal_font = ExtResource("3_n5nf8")
@@ -83,10 +85,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -422.0
-offset_top = -304.0
-offset_right = -263.0
-offset_bottom = -145.0
+offset_left = -428.0
+offset_top = -301.0
+offset_right = -269.0
+offset_bottom = -142.0
 grow_horizontal = 0
 grow_vertical = 0
 mouse_default_cursor_shape = 2

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=6 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
+[ext_resource type="Texture2D" uid="uid://br1jc8afto3xj" path="res://assets/clouds/sky.png" id="2_5rfim"]
 [ext_resource type="Texture2D" uid="uid://c1n3ycv124aoh" path="res://assets/obstacles/jump-lilypad.png" id="5_r4wdr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_843q2"]
@@ -11,6 +12,11 @@ height = 69.5549
 [node name="LevelOne" type="Node2D"]
 rotation = -0.000763722
 script = ExtResource("1_y8ti4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 8192.0
+offset_bottom = 2048.0
+texture = ExtResource("2_5rfim")
 
 [node name="Player" parent="." instance=ExtResource("1_cd1xg")]
 
