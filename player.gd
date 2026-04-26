@@ -16,8 +16,26 @@ var is_hopping = false
 #sync project settings gravity with rigid body nodes
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+
+func _update_camera_limits():
+	if GameState.action_scene == true:
+		$Camera2D.limit_left = -100000
+		$Camera2D.limit_top = -100000
+		$Camera2D.limit_right = 100000   # was -100000, must be positive
+		$Camera2D.limit_bottom = 100000  # was -100000, must be positive
+	else:
+		$Camera2D.limit_left = 0
+		$Camera2D.limit_top = 0
+		$Camera2D.limit_right = 1920
+		$Camera2D.limit_bottom = 1080
+
+
 func _ready():
 	$AnimatedSprite2D.play("idle")
+	get_tree().tree_changed.connect(_on_scene_changed)
+
+func _on_scene_changed():
+	_update_camera_limits()
 
 func _input(event):
 	#if event.is_action_pressed("quit") and is_on_floor():
