@@ -1,5 +1,7 @@
 extends Node2D
 
+var bounce = false
+
 #var sink = false
 @onready var muted = false
 @onready var sfx_muted = false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ufxftl15ogss"
-path="res://.godot/imported/frog1.png-af5fd9d8ea762538b4b278c4193fb540.ctex"
+uid="uid://dcb82adpv34hy"
+path="res://.godot/imported/j4.png-adb33823af0c51ef9a9774c460c73e87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/idle-animation/frog1.png"
-dest_files=["res://.godot/imported/frog1.png-af5fd9d8ea762538b4b278c4193fb540.ctex"]
+source_file="res://assets/anim/jump/j4.png"
+dest_files=["res://.godot/imported/j4.png-adb33823af0c51ef9a9774c460c73e87.ctex"]
 
 [params]
 

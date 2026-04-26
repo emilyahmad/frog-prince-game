@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpcnx7qdit3uo"
-path="res://.godot/imported/frog3.png-6db53f2323fdcd905004e7a036d19218.ctex"
+uid="uid://wbqk1jkxm2lk"
+path="res://.godot/imported/m3.png-6b40cf762c6747db5b7b6ec88c73082f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/idle-animation/frog3.png"
-dest_files=["res://.godot/imported/frog3.png-6db53f2323fdcd905004e7a036d19218.ctex"]
+source_file="res://assets/mushroom/m3.png"
+dest_files=["res://.godot/imported/m3.png-6b40cf762c6747db5b7b6ec88c73082f.ctex"]
 
 [params]
 

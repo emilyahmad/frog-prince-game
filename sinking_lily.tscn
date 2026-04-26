@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://5h5ecyaeckwu"]
+
+[ext_resource type="Texture2D" uid="uid://dqo17xm1n603p" path="res://assets/obstacles/sinking-lily/lily1.png" id="1_5lvpv"]
+[ext_resource type="Texture2D" uid="uid://c8fecqiif5w5j" path="res://assets/obstacles/sinking-lily/lily2.png" id="2_phjy2"]
+[ext_resource type="Texture2D" uid="uid://cow6ew3dpuob2" path="res://assets/obstacles/sinking-lily/lily3.png" id="3_312te"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xepnj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5lvpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_phjy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_312te")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lvpv"]
+size = Vector2(202, 131)
+
+[node name="SinkingLily" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xepnj")
+autoplay = "default"
+frame = 2
+frame_progress = 0.719856
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(6, -12.5)
+shape = SubResource("RectangleShape2D_5lvpv")

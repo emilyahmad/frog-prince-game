@@ -1,50 +1,79 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhbqg5dgmq5gg"]
+[gd_scene load_steps=12 format=3 uid="uid://dhbqg5dgmq5gg"]
 
 [ext_resource type="Script" uid="uid://x8j188qtlx6s" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://ufxftl15ogss" path="res://assets/idle-animation/frog1.png" id="3_sweqy"]
-[ext_resource type="Texture2D" uid="uid://dkghl5ot3ytrc" path="res://assets/idle-animation/frog2.png" id="4_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://dpcnx7qdit3uo" path="res://assets/idle-animation/frog3.png" id="5_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://bubmesl0epll3" path="res://assets/anim/idle/f1.png" id="2_dw050"]
+[ext_resource type="Texture2D" uid="uid://ekcgrihf588" path="res://assets/anim/idle/f2.png" id="3_b26j0"]
+[ext_resource type="Texture2D" uid="uid://54x1ygnme8dy" path="res://assets/anim/idle/f3.png" id="4_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://4wxotca8kbwo" path="res://assets/anim/jump/j2.png" id="5_nvl01"]
+[ext_resource type="Texture2D" uid="uid://dcb82adpv34hy" path="res://assets/anim/jump/j4.png" id="6_ivps1"]
+[ext_resource type="Texture2D" uid="uid://0x1ykiphmv6d" path="res://assets/anim/jump/j3.png" id="7_urp6f"]
+[ext_resource type="Texture2D" uid="uid://rovau8koeelq" path="res://assets/anim/jump/j5.png" id="8_bwjto"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_606se"]
+load_path = "res://.godot/imported/j1.png-df2986bf800159706ad8b81e99b0abd8.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b26j0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_sweqy")
+"texture": ExtResource("2_dw050")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_2hs0m")
+"texture": ExtResource("3_b26j0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_1jxqw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_2hs0m")
+"texture": ExtResource("4_n7ghd")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"idle",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_606se")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nvl01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ivps1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_urp6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bwjto")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dw050"]
-radius = 59.4318
-height = 131.831
+radius = 44.6959
+height = 110.219
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(-15, 0)
-zoom = Vector2(1.75, 1.75)
+zoom = Vector2(1.25, 1.25)
+limit_left = 14
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1080
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.151424, 0.155)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_b26j0")
-animation = &"new_animation"
-autoplay = "new_animation"
+animation = &"idle"
+frame_progress = 0.462551
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, 3)
 rotation = 3.14159
 scale = Vector2(1.63326, -0.92543)
 shape = SubResource("CapsuleShape2D_dw050")

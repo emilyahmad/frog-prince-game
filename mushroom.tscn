@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://dteo4tl24vbsk"]
+
+[ext_resource type="Script" uid="uid://dhqtpvbb23d06" path="res://mushroom.gd" id="1_jg55k"]
+[ext_resource type="Texture2D" uid="uid://dfjryo3svp3c5" path="res://assets/mushroom/m1.png" id="1_pl5ep"]
+[ext_resource type="Texture2D" uid="uid://dp47vpi3bu5fm" path="res://assets/mushroom/m2.png" id="2_jg55k"]
+[ext_resource type="Texture2D" uid="uid://wbqk1jkxm2lk" path="res://assets/mushroom/m3.png" id="3_4gvq0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5rjv2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pl5ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jg55k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jg55k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4gvq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4gvq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4gvq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4gvq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jg55k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jg55k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_pl5ep")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pl5ep"]
+size = Vector2(824, 200)
+
+[node name="Mushroom" type="Node2D"]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_jg55k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5rjv2")
+frame = 9
+frame_progress = 0.433276
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-40, -104)
+shape = SubResource("RectangleShape2D_pl5ep")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

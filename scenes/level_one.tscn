@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
-[ext_resource type="Texture2D" uid="uid://br1jc8afto3xj" path="res://assets/clouds/sky.png" id="2_5rfim"]
+[ext_resource type="Texture2D" uid="uid://blx2e1ql2bgb6" path="res://assets/forest-background.png" id="2_5rfim"]
 [ext_resource type="Texture2D" uid="uid://c1n3ycv124aoh" path="res://assets/obstacles/jump-lilypad.png" id="5_r4wdr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_843q2"]
@@ -19,16 +19,26 @@ offset_bottom = 2048.0
 texture = ExtResource("2_5rfim")
 
 [node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(514.74, 1649.39)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-317.943, -75.2428)
+[node name="Lilypad" type="StaticBody2D" parent="."]
+position = Vector2(267.838, 1522.2)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Lilypad"]
 position = Vector2(244, 283)
 texture = ExtResource("5_r4wdr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="StaticCollide" type="CollisionShape2D" parent="Lilypad"]
 position = Vector2(252.792, 272.193)
+rotation = 1.56704
+scale = Vector2(2.1234, 3.22487)
+shape = SubResource("CapsuleShape2D_843q2")
+
+[node name="LilyArea" type="Area2D" parent="Lilypad"]
+position = Vector2(345, 0.26355)
+
+[node name="AreaCollide" type="CollisionShape2D" parent="Lilypad/LilyArea"]
+position = Vector2(-93.2093, 273.929)
 rotation = 1.56704
 scale = Vector2(2.1234, 3.22487)
 shape = SubResource("CapsuleShape2D_843q2")
