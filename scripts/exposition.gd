@@ -35,7 +35,7 @@ func play_next():
 # hardcoded to 4, may change to array size
 	if (currentIndex == 3):
 #		# go to next scene
-		get_tree().change_scene_to_file("res://scenes/level_one.tscn")
+		SceneTransition.change_scene("res://scenes/level_one.tscn")
 	else:
 		currentIndex += 1
 		print(currentIndex)

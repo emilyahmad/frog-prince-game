@@ -1,6 +1,6 @@
 extends Node2D
 
-var bounce = false
+var sink = false
 
 func _input(event):
 	if event.is_action_pressed("quit"):

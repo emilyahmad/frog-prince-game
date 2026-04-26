@@ -48,6 +48,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-	if GameState.bounce == true:
-		velocity.y = jump_power * jump_multiplier
-		GameState.bounce = false
+	#if GameState.sink == true:
+		#await get_tree().create_timer(.5).timeout
+		#position.y -= 10
+		#GameState.sink = false
