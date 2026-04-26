@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://c1n3ycv124aoh" path="res://assets/obstacles/jump-lilypad.png" id="5_r4wdr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_843q2"]
-radius = 53.987
-height = 170.936
+radius = 34.7775
+height = 69.5549
 
 [node name="LevelOne" type="Node2D"]
 rotation = -0.000763722
@@ -15,12 +15,14 @@ script = ExtResource("1_y8ti4")
 [node name="Player" parent="." instance=ExtResource("1_cd1xg")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-0.124487, 163)
+position = Vector2(-317.943, -75.2428)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(244, 283)
 texture = ExtResource("5_r4wdr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(7.00687, -8.99465)
-scale = Vector2(1.98779, 0.889221)
+position = Vector2(252.792, 272.193)
+rotation = 1.56704
+scale = Vector2(2.1234, 3.22487)
 shape = SubResource("CapsuleShape2D_843q2")

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca5rjs1y7xdlb"]
+
+[ext_resource type="Texture2D" uid="uid://br1jc8afto3xj" path="res://assets/clouds/sky.png" id="1_py8sg"]
+[ext_resource type="Texture2D" uid="uid://61bk1bq7dk5" path="res://assets/clouds/cloud1.png" id="2_4krsh"]
+[ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="3_xeklh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_py8sg"]
+radius = 36.292
+height = 77.4528
+
+[node name="Sky" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 2352.0
+offset_bottom = 836.0
+texture = ExtResource("1_py8sg")
+
+[node name="Player" parent="." instance=ExtResource("3_xeklh")]
+position = Vector2(243, 99)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")

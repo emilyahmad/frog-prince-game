@@ -10,7 +10,7 @@ var direction = 0
 
 #const SPEED = 300.0
 #const JUMP_VELOCITY = -400.0
-
+#
 #sync project settings gravity with rigid body nodes
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -47,8 +47,3 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 
 	move_and_slide()
-
-	#if GameState.sink == true:
-		#await get_tree().create_timer(.5).timeout
-		#position.y -= 10
-		#GameState.sink = false
