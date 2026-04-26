@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dicx2s6ig7w11"]
+[gd_scene load_steps=20 format=3 uid="uid://dicx2s6ig7w11"]
 
 [ext_resource type="Texture2D" uid="uid://bm2pfuoq8dqtm" path="res://assets/obstacles/sin/Intro-background.png" id="1_s2ta7"]
 [ext_resource type="Script" uid="uid://cyqoicweh6vbu" path="res://intro.gd" id="1_y6ycx"]
@@ -50,6 +50,9 @@ size = Vector2(90.8356, 595.575)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d0rr7"]
 size = Vector2(20, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wby50"]
+size = Vector2(290, 59.25)
 
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_y6ycx")
@@ -158,4 +161,11 @@ position = Vector2(1613, 924)
 [node name="Player" parent="." instance=ExtResource("2_u2rf6")]
 position = Vector2(287, 827)
 
+[node name="Water" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Water"]
+position = Vector2(1650, 1033.62)
+shape = SubResource("RectangleShape2D_wby50")
+
 [connection signal="body_entered" from="EndArea/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]

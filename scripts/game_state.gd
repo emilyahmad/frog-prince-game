@@ -3,8 +3,10 @@ extends Node2D
 var bounce = false
 var sunk = false
 var sink = false
+var new_lily_scene = false
 
 var action_scene = false
+var sky_scene = false
 
 #var sink = false
 @onready var muted = false

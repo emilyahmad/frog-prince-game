@@ -19,10 +19,10 @@ var is_hopping = false
 
 func _update_camera_limits():
 	if GameState.action_scene == true:
-		$Camera2D.limit_left = -100000
-		$Camera2D.limit_top = -100000
-		$Camera2D.limit_right = 100000   # was -100000, must be positive
-		$Camera2D.limit_bottom = 100000  # was -100000, must be positive
+		$Camera2D.limit_left = 14
+		$Camera2D.limit_top = 0
+		$Camera2D.limit_right = 10000   # was -100000, must be positive
+		$Camera2D.limit_bottom = 2000  # was -100000, must be positive
 	else:
 		$Camera2D.limit_left = 0
 		$Camera2D.limit_top = 0

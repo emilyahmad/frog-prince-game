@@ -4,12 +4,12 @@ extends Node2D
 func _ready() -> void:
 	GameState.action_scene = true
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
+func _on_water_body_entered(body: CharacterBody2D) -> void:
+	SceneTransition.change_scene("res://scenes/level_one.tscn")
 
-# sink animation once hit
-
-# on contact -> hi
+func _on_big_shroom_body_entered(body: CharacterBody2D) -> void:
+	SceneTransition.change_scene("res://sky.tscn")
