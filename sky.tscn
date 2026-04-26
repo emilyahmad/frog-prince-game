@@ -5,15 +5,15 @@
 [ext_resource type="Texture2D" uid="uid://61bk1bq7dk5" path="res://assets/clouds/cloud1.png" id="2_4krsh"]
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="3_xeklh"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_py8sg"]
-radius = 36.292
-height = 77.4528
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xeklh"]
 size = Vector2(421, 2051)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4krsh"]
 size = Vector2(7920.5, 20)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_py8sg"]
+radius = 36.292
+height = 77.4528
 
 [node name="SkyLevel" type="Node2D"]
 script = ExtResource("1_4krsh")
@@ -26,681 +26,755 @@ texture = ExtResource("1_py8sg")
 [node name="Player" parent="." instance=ExtResource("3_xeklh")]
 position = Vector2(788, 443)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(530, 278)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(916, 521)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2(1653, 161)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2(1964, 322)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D5"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D21" type="StaticBody2D" parent="."]
-position = Vector2(1913, 1248)
-scale = Vector2(1.3, 1.3)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D21"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D21"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D22" type="StaticBody2D" parent="."]
-position = Vector2(2285, 1102)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D22"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D22"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D23" type="StaticBody2D" parent="."]
-position = Vector2(2868, 814)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D23"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D23"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D24" type="StaticBody2D" parent="."]
-position = Vector2(3112, -1.99994)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D24"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D24"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D25" type="StaticBody2D" parent="."]
-position = Vector2(3598, 1007)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D25"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D25"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D26" type="StaticBody2D" parent="."]
-position = Vector2(4161, 389)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D26"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D26"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D27" type="StaticBody2D" parent="."]
-position = Vector2(4844, 68)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D27"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D27"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D28" type="StaticBody2D" parent="."]
-position = Vector2(5181, 646)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D28"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D28"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D29" type="StaticBody2D" parent="."]
-position = Vector2(5982, 262)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D29"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D29"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D30" type="StaticBody2D" parent="."]
-position = Vector2(6340, 409)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D30"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D30"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D31" type="StaticBody2D" parent="."]
-position = Vector2(7070, 333)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D31"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D31"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D32" type="StaticBody2D" parent="."]
-position = Vector2(5464, 1399)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D32"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D32"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D33" type="StaticBody2D" parent="."]
-position = Vector2(5707, 1316)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D33"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D33"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D34" type="StaticBody2D" parent="."]
-position = Vector2(6210, 1523)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D34"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D34"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D35" type="StaticBody2D" parent="."]
-position = Vector2(6495, 1672)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D35"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D35"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D36" type="StaticBody2D" parent="."]
-position = Vector2(6911, 1644)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D36"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D36"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D37" type="StaticBody2D" parent="."]
-position = Vector2(7163, 1529)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D37"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D37"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D38" type="StaticBody2D" parent="."]
-position = Vector2(7264, 1412)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D38"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D38"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D39" type="StaticBody2D" parent="."]
-position = Vector2(7572, 1189)
-scale = Vector2(0.8, 0.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D39"]
-position = Vector2(243.75, 282.5)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D39"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D8" type="StaticBody2D" parent="."]
-position = Vector2(1964, 322)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D8"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D6" type="StaticBody2D" parent="."]
-position = Vector2(2629, -10)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D6"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D9" type="StaticBody2D" parent="."]
-position = Vector2(2629, -10)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D9"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D10" type="StaticBody2D" parent="."]
-position = Vector2(3276, 345)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D10"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D11" type="StaticBody2D" parent="."]
-position = Vector2(3417, 1436)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D11"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D11"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D12" type="StaticBody2D" parent="."]
-position = Vector2(3867, 1182)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D12"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D12"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D13" type="StaticBody2D" parent="."]
-position = Vector2(4407, 716)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D13"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D13"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D14" type="StaticBody2D" parent="."]
-position = Vector2(4881, 990)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D14"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D14"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D15" type="StaticBody2D" parent="."]
-position = Vector2(5528, 726)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D15"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D15"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D16" type="StaticBody2D" parent="."]
-position = Vector2(5834, 965)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D16"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D16"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D17" type="StaticBody2D" parent="."]
-position = Vector2(6424, 758)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D17"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D17"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D18" type="StaticBody2D" parent="."]
-position = Vector2(6678, 1153)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D18"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D18"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D19" type="StaticBody2D" parent="."]
-position = Vector2(7001, 785)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D19"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D19"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D20" type="StaticBody2D" parent="."]
-position = Vector2(7270, 410)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D20"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D20"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D7" type="StaticBody2D" parent="."]
-position = Vector2(2579, 876)
-scale = Vector2(1.2, 1.2)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D7"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2(1225, 622)
-scale = Vector2(1.8, 1.8)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
-position = Vector2(244, 283)
-rotation = 1.5708
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_4krsh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-visible = false
-position = Vector2(243, 277)
-rotation = 1.61875
-scale = Vector2(1.69662, 4.13523)
-shape = SubResource("CapsuleShape2D_py8sg")
-
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-33, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(8128, 1023)
 shape = SubResource("RectangleShape2D_xeklh")
 
 [node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(-2, 0)
+position = Vector2(-2, -2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(4309, 2037)
+shape = SubResource("RectangleShape2D_4krsh")
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(-2, -6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2(3961, 2041)
 shape = SubResource("RectangleShape2D_4krsh")
+
+[node name="AllClouds" type="Node2D" parent="."]
+
+[node name="Clouds" type="Node2D" parent="AllClouds"]
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(441, 584)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(776, 459)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(1436, 941)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(1118, 1077)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(1780, 793)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(2109, 646)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(2715, 1102)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(2403, 1329)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(2075, 1466)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(3059, 965)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(3343, 744)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(3660, 610)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(4542, 998)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(4219, 1144)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(3989, 1368)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(3644, 1495)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(5062, 1154)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(5409, 1020)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(5901, 1544)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(6222, 1389)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(6469, 1172)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(6821, 1040)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(7545, 1461)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(7207, 1584)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud"]
+position = Vector2(7207, 1584)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds2" type="Node2D" parent="AllClouds"]
+position = Vector2(670, 496)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds2"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds2/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds2/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds2"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds2/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds2/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds2"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds2/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds2/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds3" type="Node2D" parent="AllClouds"]
+position = Vector2(1329, 198)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds3"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds3/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds3/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds3"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds3/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds3/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds3"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds3/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds3/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds4" type="Node2D" parent="AllClouds"]
+position = Vector2(1637, 885)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds4"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds4/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds4/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds4"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds4/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds4/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds4"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds4/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds4/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds5" type="Node2D" parent="AllClouds"]
+position = Vector2(2260, 521)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds5"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds5/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds5/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds5"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds5/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds5/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds5"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds5/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds5/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds6" type="Node2D" parent="AllClouds"]
+position = Vector2(2883, 160)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds6"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds6/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds6/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds6"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds6/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds6/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds6"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds6/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds6/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds7" type="Node2D" parent="AllClouds"]
+position = Vector2(3208, 912)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds7"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds7/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds7/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds7"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds7/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds7/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds7"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds7/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds7/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds8" type="Node2D" parent="AllClouds"]
+position = Vector2(3779, 556)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds8"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds8/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds8/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds8"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds8/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds8/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds8"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds8/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds8/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds9" type="Node2D" parent="AllClouds"]
+position = Vector2(4624, 576)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds9"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds9/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds9/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds9"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds9/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds9/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds9"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds9/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds9/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds10" type="Node2D" parent="AllClouds"]
+position = Vector2(5451, 953)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds10"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds10/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds10/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds10"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds10/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds10/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds10"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds10/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds10/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds11" type="Node2D" parent="AllClouds"]
+position = Vector2(6026, 586)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds11"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds11/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds11/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds11"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds11/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds11/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds11"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds11/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds11/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Clouds12" type="Node2D" parent="AllClouds"]
+position = Vector2(6755, 1008)
+
+[node name="Cloud" type="StaticBody2D" parent="AllClouds/Clouds12"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds12/Cloud"]
+position = Vector2(244, 283)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds12/Cloud"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud2" type="StaticBody2D" parent="AllClouds/Clouds12"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds12/Cloud2"]
+position = Vector2(445, 590)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds12/Cloud2"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
+
+[node name="Cloud3" type="StaticBody2D" parent="AllClouds/Clouds12"]
+position = Vector2(530, 278)
+
+[node name="Sprite2D" type="Sprite2D" parent="AllClouds/Clouds12/Cloud3"]
+position = Vector2(774, 454)
+rotation = 1.5708
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_4krsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AllClouds/Clouds12/Cloud3"]
+position = Vector2(243, 277)
+rotation = 1.61875
+scale = Vector2(1.69662, 4.13523)
+shape = SubResource("CapsuleShape2D_py8sg")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="editor_description_changed" from="Area2D" to="." method="_on_area_2d_editor_description_changed"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_2_body_entered"]

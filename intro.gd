@@ -6,10 +6,10 @@ func _process(delta: float) -> void:
 var finishedInstruction = false
 var currentIndex := 0
 var exposition: Array[String] = [
-	"Welcome to the forest",
-	"You'll have to traverse it to reach the castle",
-	"Try jumping on some mushrooms, you'll bounce super high",
-	"Avoid standing on lilypads for too long, they'll sink!"
+	"You're just a little frog trying to make it through the forest",
+	"Hop across mushrooms to bounce extra high",
+	"Be careful on lilypads, they'll sink if you stay too long",
+	"Watch out for lurking creatures in the water—they're faster than they look!"
 ]
 var last = exposition.size()
 var almost = last-1

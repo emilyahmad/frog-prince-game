@@ -4,10 +4,11 @@ var currentIndex := 0
 var length = len(exposition)
 
 var exposition: Array[String] = [
-	"This is the story of the froggy prince..",
-	"Once upon a time in a land far far away..",
-	"More story line",
-	"Yea"
+	"Last night, I had the strangest dream...",
+	"There was a beautiful princess waiting beyond a vast swamp.",
+	"I had to journey across, find her, and give her a kiss.",
+	"And then I woke up... but it felt so real."
+	
 ]
 
 var expo_photos: Array[String] = [

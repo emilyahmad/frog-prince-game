@@ -41,7 +41,7 @@ shape = SubResource("RectangleShape2D_phjy2")
 position = Vector2(-2, 1)
 sprite_frames = SubResource("SpriteFrames_xepnj")
 frame = 2
-frame_progress = 0.719856
+frame_progress = 1.0
 
 [node name="Area2D" type="Area2D" parent="."]
 

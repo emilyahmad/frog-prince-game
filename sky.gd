@@ -11,7 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
-	SceneTransition.change_scene("res://assets/endscene.tscn")
+	SceneTransition.change_scene("res://end_scene.tscn")
 
 func _on_area_2d_2_body_entered(body: Node2D) -> void:
 	SceneTransition.change_scene("res://sky.tscn")
