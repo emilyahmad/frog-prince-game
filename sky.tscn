@@ -54,147 +54,167 @@ shape = SubResource("RectangleShape2D_lsyyi")
 [node name="Clouds" type="Node2D" parent="AllClouds"]
 
 [node name="Cloud" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(550, 587)
-scale = Vector2(0.15, 0.15)
+position = Vector2(550, 606)
+rotation = 0.0872665
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud2" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(796, 850)
-scale = Vector2(0.15, 0.15)
+position = Vector2(796, 875)
+rotation = -0.0872665
+scale = Vector2(0.2, 0.2)
 
 [node name="Cloud3" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(1124, 784)
-scale = Vector2(0.15, 0.15)
+position = Vector2(1123, 705)
+rotation = 0.0872665
+scale = Vector2(0.125, 0.125)
 
 [node name="Cloud4" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(1370, 970)
-scale = Vector2(0.15, 0.15)
+position = Vector2(1369, 1002)
+rotation = -0.0872665
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud5" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(1666, 839)
-scale = Vector2(0.15, 0.15)
+position = Vector2(1666, 801)
+rotation = 0.0349066
+scale = Vector2(0.17, 0.17)
 
 [node name="Cloud6" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(1869, 1009)
-scale = Vector2(0.15, 0.15)
+position = Vector2(1869, 1035)
+rotation = 0.0872665
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud7" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(2175, 905)
-scale = Vector2(0.15, 0.15)
+position = Vector2(2175, 883)
+rotation = 0.0349066
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud8" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(2383, 1573)
-scale = Vector2(0.15, 0.15)
+position = Vector2(2382, 1634)
+rotation = 0.0698132
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud9" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(2662, 1458)
-scale = Vector2(0.15, 0.15)
+position = Vector2(2687, 1471)
+rotation = -0.0872665
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud10" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(2930, 1381)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3067, 1380)
+rotation = -0.0698132
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud11" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(3138, 1879)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3107, 1892)
+rotation = 0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud12" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(3406, 1791)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3425, 1797)
+rotation = -0.174533
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud13" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(3652, 1698)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3667, 1658)
+rotation = -0.0872665
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud14" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(3871, 1879)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3855, 1868)
+rotation = 0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud15" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(4167, 1802)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4167, 1818)
+rotation = 0.0349066
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud16" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(4446, 1671)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4462, 1722)
+rotation = 0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud17" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(4665, 1906)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4627, 1921)
+rotation = -0.0872665
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud18" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(4895, 1802)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4853, 1802)
+rotation = 0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud19" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(5152, 1983)
-scale = Vector2(0.15, 0.15)
+rotation = 0.0174533
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud20" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(5398, 1791)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5406, 1809)
+rotation = -0.139626
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud21" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(5628, 1676)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5628, 1692)
+rotation = -0.15708
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud22" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(5973, 1736)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5932, 1743)
+rotation = -0.0349066
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud23" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(6219, 1621)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6180, 1621)
+rotation = -0.0872665
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud24" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(6460, 1517)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6423, 1547)
+rotation = 0.0349066
+scale = Vector2(0.11, 0.11)
 
 [node name="Cloud25" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(6657, 1687)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6627, 1688)
+rotation = 0.0872665
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud26" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
-position = Vector2(6936, 1594)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6859, 1578)
+rotation = -0.0872665
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud27" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(7171, 1479)
-scale = Vector2(0.15, 0.15)
+rotation = 0.0349066
+scale = Vector2(0.17, 0.17)
 
 [node name="Cloud28" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(7357, 1725)
-scale = Vector2(0.15, 0.15)
+rotation = 0.0349066
+scale = Vector2(0.18, 0.18)
 
 [node name="Cloud29" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(7653, 1687)
-scale = Vector2(0.15, 0.15)
+rotation = 0.0349066
+scale = Vector2(0.19, 0.19)
 
 [node name="Cloud30" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(7823, 1868)
+rotation = -0.20944
 scale = Vector2(0.15, 0.15)
 
 [node name="Cloud31" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(8042, 1764)
+rotation = 0.139626
 scale = Vector2(0.15, 0.15)
 
 [node name="Cloud32" parent="AllClouds/Clouds" instance=ExtResource("4_4krsh")]
 position = Vector2(8206, 1945)
+rotation = -0.174533
 scale = Vector2(0.15, 0.15)
 
 [node name="Clouds2" type="Node2D" parent="AllClouds"]
 position = Vector2(366, -893)
-
-[node name="Cloud" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(550, 587)
-scale = Vector2(0.15, 0.15)
-
-[node name="Cloud2" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(796, 850)
-scale = Vector2(0.15, 0.15)
-
-[node name="Cloud3" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(1124, 784)
-scale = Vector2(0.15, 0.15)
 
 [node name="Cloud4" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
 position = Vector2(1370, 970)
@@ -213,96 +233,119 @@ position = Vector2(2175, 905)
 scale = Vector2(0.15, 0.15)
 
 [node name="Cloud8" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(2383, 1573)
-scale = Vector2(0.15, 0.15)
+position = Vector2(2382, 1594)
+rotation = -0.174533
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud9" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(2662, 1458)
-scale = Vector2(0.15, 0.15)
+position = Vector2(2613, 1508)
+rotation = 0.0872665
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud10" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(2930, 1381)
-scale = Vector2(0.15, 0.15)
+position = Vector2(2940, 1432)
+rotation = -0.122173
+scale = Vector2(0.21, 0.21)
 
 [node name="Cloud11" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(3138, 1879)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3118, 1935)
+rotation = -0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud12" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(3406, 1791)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3377, 1810)
+rotation = 0.0698132
+scale = Vector2(0.16, 0.16)
 
 [node name="Cloud13" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(3652, 1698)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3651, 1754)
+rotation = 0.139626
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud14" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(3871, 1879)
-scale = Vector2(0.15, 0.15)
+position = Vector2(3830, 1913)
+rotation = -0.20944
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud15" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(4167, 1802)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4079, 1827)
+rotation = 0.0872665
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud16" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(4446, 1671)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4364, 1739)
+rotation = 0.0872665
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud17" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(4665, 1906)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4570, 1903)
+rotation = 0.0872665
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud18" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(4895, 1802)
-scale = Vector2(0.15, 0.15)
+position = Vector2(4825, 1844)
+rotation = 0.244346
+scale = Vector2(0.16, 0.16)
 
 [node name="Cloud19" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(5152, 1983)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5084, 1970)
+rotation = -0.20944
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud20" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(5398, 1791)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5395, 1838)
+rotation = -0.139626
+scale = Vector2(0.21, 0.21)
 
 [node name="Cloud21" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(5628, 1676)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5649, 1719)
+rotation = -0.0872665
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud22" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(5973, 1736)
-scale = Vector2(0.15, 0.15)
+position = Vector2(5931, 1779)
+rotation = 0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud23" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(6219, 1621)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6187, 1706)
+rotation = 0.174533
+scale = Vector2(0.12, 0.12)
 
 [node name="Cloud24" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(6460, 1517)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6421, 1598)
+rotation = -0.122173
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud25" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(6657, 1687)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6638, 1707)
+rotation = -0.0872665
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud26" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(6936, 1594)
-scale = Vector2(0.15, 0.15)
+position = Vector2(6875, 1592)
+rotation = -0.174533
+scale = Vector2(0.16, 0.16)
 
 [node name="Cloud27" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(7171, 1479)
-scale = Vector2(0.15, 0.15)
+position = Vector2(7124, 1479)
+rotation = -0.0698132
+scale = Vector2(0.14, 0.14)
 
 [node name="Cloud28" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(7357, 1725)
-scale = Vector2(0.15, 0.15)
+position = Vector2(7296, 1725)
+rotation = -0.0872665
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud29" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
-position = Vector2(7653, 1687)
-scale = Vector2(0.15, 0.15)
+position = Vector2(7571, 1641)
+rotation = 0.0349066
+scale = Vector2(0.13, 0.13)
 
 [node name="Cloud30" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
 position = Vector2(7823, 1868)
-scale = Vector2(0.15, 0.15)
+rotation = 0.0349066
+scale = Vector2(0.16, 0.16)
 
 [node name="Cloud31" parent="AllClouds/Clouds2" instance=ExtResource("4_4krsh")]
 position = Vector2(8042, 1764)
@@ -315,52 +358,52 @@ scale = Vector2(0.15, 0.15)
 [node name="Birds" type="Node2D" parent="."]
 
 [node name="Bird" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(887, 397)
+position = Vector2(845, 370)
 
 [node name="Bird2" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(1751, 470)
+position = Vector2(1851, 425)
 
 [node name="Bird3" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(2373, 696)
+position = Vector2(2381, 695)
 
 [node name="Bird4" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(2989, 1113)
+position = Vector2(2848, 1088)
 
 [node name="Bird5" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(3187, 971)
+position = Vector2(3092, 912)
 
 [node name="Bird6" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(3257, 1502)
+position = Vector2(3375, 1535)
 
 [node name="Bird7" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(3674, 1352)
+position = Vector2(3610, 1356)
 
 [node name="Bird8" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(4513, 1384)
+position = Vector2(4466, 1417)
 
 [node name="Bird9" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(4713, 1222)
+position = Vector2(4652, 1250)
 
 [node name="Bird10" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(5142, 1428)
+position = Vector2(5153, 1231)
 
 [node name="Bird11" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(5805, 1332)
+position = Vector2(5801, 1217)
 
 [node name="Bird12" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(6284, 1182)
+position = Vector2(6284, 1117)
 
 [node name="Bird13" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(6750, 1230)
+position = Vector2(6734, 1026)
 
 [node name="Bird14" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(7147, 1091)
+position = Vector2(7341, 966)
 
 [node name="Bird15" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(7490, 1276)
+position = Vector2(7619, 1195)
 
 [node name="Bird16" parent="Birds" instance=ExtResource("5_xeklh")]
-position = Vector2(7894, 1429)
+position = Vector2(7912, 1424)
 
 [connection signal="body_entered" from="FallOutSky" to="." method="_on_area_2d_2_body_entered"]
 [connection signal="body_entered" from="EndArea" to="." method="_on_end_area_body_entered"]
