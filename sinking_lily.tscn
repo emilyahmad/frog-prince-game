@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://5h5ecyaeckwu"]
+[gd_scene load_steps=12 format=3 uid="uid://5h5ecyaeckwu"]
 
 [ext_resource type="Texture2D" uid="uid://dqo17xm1n603p" path="res://assets/obstacles/sinking-lily/lily1.png" id="1_5lvpv"]
 [ext_resource type="Script" uid="uid://bqhhfnrgw3rcy" path="res://sinking_lily.gd" id="1_phjy2"]
 [ext_resource type="Texture2D" uid="uid://c8fecqiif5w5j" path="res://assets/obstacles/sinking-lily/lily2.png" id="2_phjy2"]
 [ext_resource type="Texture2D" uid="uid://cow6ew3dpuob2" path="res://assets/obstacles/sinking-lily/lily3.png" id="3_312te"]
+[ext_resource type="Texture2D" uid="uid://dd6x732pmxajl" path="res://assets/swamp-decor/6.png" id="5_312te"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_phjy2"]
 size = Vector2(181, 64.625)
@@ -42,6 +43,42 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lvpv"]
 size = Vector2(203, 36)
 
+[sub_resource type="Animation" id="Animation_312te"]
+resource_name = "ripple_effect"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ripple:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ssmrn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ripple:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ldcp7"]
+_data = {
+&"RESET": SubResource("Animation_ssmrn"),
+&"ripple_effect": SubResource("Animation_312te")
+}
+
 [node name="SinkingLily" type="Node2D"]
 script = ExtResource("1_phjy2")
 
@@ -60,5 +97,18 @@ sprite_frames = SubResource("SpriteFrames_xepnj")
 [node name="LilyCollision" type="CollisionShape2D" parent="AreaLily"]
 position = Vector2(5.5, -15)
 shape = SubResource("RectangleShape2D_5lvpv")
+
+[node name="Ripple" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(120, 41)
+rotation = -0.052675
+scale = Vector2(0.1, 0.10463)
+texture = ExtResource("5_312te")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Ripple"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_ldcp7")
+}
 
 [connection signal="body_entered" from="AreaLily" to="." method="_on_area_2d_body_entered"]

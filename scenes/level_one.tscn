@@ -1,10 +1,15 @@
-[gd_scene load_steps=16 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=21 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
 [ext_resource type="Texture2D" uid="uid://blx2e1ql2bgb6" path="res://assets/forest-background.png" id="2_5rfim"]
 [ext_resource type="Texture2D" uid="uid://cpfsjeqqnrm74" path="res://assets/mushroom/bigMushroom.png" id="3_5rfim"]
 [ext_resource type="PackedScene" uid="uid://5h5ecyaeckwu" path="res://sinking_lily.tscn" id="4_r4wdr"]
+[ext_resource type="PackedScene" uid="uid://csg81w5nigvjp" path="res://scenes/pretty_rock.tscn" id="6_bhu28"]
+[ext_resource type="Texture2D" uid="uid://duopnp411twmw" path="res://assets/swamp-decor/1.png" id="7_o5wbv"]
+[ext_resource type="Texture2D" uid="uid://dlhm6hejanaxg" path="res://assets/swamp-decor/2.png" id="8_s6ikc"]
+[ext_resource type="Texture2D" uid="uid://bqxggoh138v2m" path="res://assets/swamp-decor/3.png" id="9_036lt"]
+[ext_resource type="Texture2D" uid="uid://csoa6hororn00" path="res://assets/swamp-decor/4.png" id="10_nlxio"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_843q2"]
 size = Vector2(8206.42, 47.6962)
@@ -410,9 +415,6 @@ texture = ExtResource("3_5rfim")
 position = Vector2(7923.77, 1610.05)
 shape = SubResource("RectangleShape2D_s6ikc")
 
-[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
-position = Vector2(7426.27, 956.672)
-
 [node name="BordersStatic" type="StaticBody2D" parent="."]
 
 [node name="BordersArea" type="Area2D" parent="BordersStatic"]
@@ -439,6 +441,171 @@ shape = SubResource("RectangleShape2D_nlxio")
 position = Vector2(7496.07, -91.2751)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_036lt")
+
+[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(444.058, 1233.34)
+
+[node name="Rocks" type="Node2D" parent="."]
+
+[node name="PrettyRock" parent="Rocks" instance=ExtResource("6_bhu28")]
+position = Vector2(-35.9791, 1281.97)
+scale = Vector2(0.25, 0.25)
+
+[node name="PrettyRock2" parent="Rocks" instance=ExtResource("6_bhu28")]
+position = Vector2(1196.02, 1281.91)
+scale = Vector2(0.2, 0.2)
+
+[node name="PrettyRock3" parent="Rocks" instance=ExtResource("6_bhu28")]
+position = Vector2(1988.88, 1470.52)
+scale = Vector2(0.17, 0.17)
+
+[node name="PrettyRock4" parent="Rocks" instance=ExtResource("6_bhu28")]
+position = Vector2(2663.03, 1269.03)
+scale = Vector2(0.25, 0.25)
+
+[node name="PrettyRock5" parent="Rocks" instance=ExtResource("6_bhu28")]
+position = Vector2(4696.98, 1335.59)
+scale = Vector2(0.21, 0.21)
+
+[node name="PrettyRock6" parent="Rocks" instance=ExtResource("6_bhu28")]
+position = Vector2(5809.96, 1364.44)
+scale = Vector2(0.17, 0.17)
+
+[node name="Sprouts" type="Node2D" parent="."]
+
+[node name="A_Sprout1" type="Sprite2D" parent="Sprouts"]
+position = Vector2(-5969.52, 818.544)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("7_o5wbv")
+
+[node name="B_Sprout1" type="Sprite2D" parent="Sprouts"]
+position = Vector2(-5019.52, 819.27)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("8_s6ikc")
+
+[node name="C_Sprout1" type="Sprite2D" parent="Sprouts"]
+position = Vector2(-4071.5, 781.994)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("9_036lt")
+
+[node name="D_Sprout1" type="Sprite2D" parent="Sprouts"]
+position = Vector2(-3017.91, 791.386)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("10_nlxio")
+
+[node name="A_Sprouts" type="Node2D" parent="Sprouts"]
+
+[node name="A_Sprout2" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(288.907, 1431.22)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout3" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(831.471, 2002.64)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout4" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(2093.99, 1325.6)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout5" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(2362.49, 1975.8)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout6" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(2982.97, 1353.28)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout7" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(3413.47, 2007.61)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout8" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(4525.97, 1350.46)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout9" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(5409.49, 1983.13)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout10" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(6064.96, 1367.63)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_o5wbv")
+
+[node name="A_Sprout11" type="Sprite2D" parent="Sprouts/A_Sprouts"]
+position = Vector2(6732.48, 1991.14)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("7_o5wbv")
+
+[node name="B_Sprouts" type="Node2D" parent="Sprouts"]
+
+[node name="B_Sprout2" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(209.891, 1452.16)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout3" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(383.523, 1934.29)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout4" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(1183.96, 1366.9)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout5" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(2285.5, 1970.75)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout6" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(3287.87, 1477.51)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout7" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(3853.49, 1980.94)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout8" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(3853.97, 1353.94)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout9" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(5086.82, 1547.89)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout10" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(4833.52, 1944.69)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout11" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(5704.97, 1355.36)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout12" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(6659.47, 2005.09)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("8_s6ikc")
+
+[node name="B_Sprout13" type="Sprite2D" parent="Sprouts/B_Sprouts"]
+position = Vector2(7336.97, 1354.6)
+scale = Vector2(0.23, 0.23)
+texture = ExtResource("8_s6ikc")
 
 [connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]
 [connection signal="body_entered" from="BigMushroom/Area2D" to="." method="_on_area_2d_body_entered"]

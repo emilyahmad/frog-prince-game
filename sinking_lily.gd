@@ -34,6 +34,8 @@ func _respawn():
 
 func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
 	print("collides")
+	$Ripple/AnimationPlayer.play("ripple_effect")
+	$Ripple/AnimationPlayer.play_backwards("ripple_effect")
 	if has_sunk == false:
 		GameState.sink = true
 		$AnimatedSprite2D.play("sink")
