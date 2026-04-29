@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=15 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
@@ -26,6 +26,12 @@ size = Vector2(532.489, 33.2826)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o5wbv"]
 size = Vector2(885.849, 29.665)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6ikc"]
+size = Vector2(1026.7, 92.3773)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_036lt"]
+size = Vector2(187.601, 2105.86)
 
 [node name="LevelOne" type="Node2D"]
 rotation = -0.000763722
@@ -91,6 +97,289 @@ shape = SubResource("RectangleShape2D_astit")
 position = Vector2(6743.92, 1525.32)
 shape = SubResource("RectangleShape2D_o5wbv")
 
+[node name="AllPads" type="Node2D" parent="."]
+
+[node name="Pads" type="Node2D" parent="AllPads"]
+
+[node name="SinkingLily" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
+
+[node name="SinkingLily4" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
+
+[node name="SinkingLily7" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(1242.55, 1899.95)
+scale = Vector2(1.05, 1.05)
+skew = 0.167552
+
+[node name="SinkingLily8" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(1483.65, 1765.13)
+rotation = 0.111701
+scale = Vector2(0.8, 0.8)
+skew = 0.167552
+
+[node name="SinkingLily5" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
+
+[node name="SinkingLily6" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(983.59, 1846.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
+
+[node name="SinkingLily2" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
+scale = Vector2(0.75, 0.75)
+skew = -0.223402
+
+[node name="SinkingLily3" parent="AllPads/Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
+
+[node name="Pads2" type="Node2D" parent="AllPads"]
+position = Vector2(1546.04, -57.8193)
+
+[node name="SinkingLily" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
+
+[node name="SinkingLily4" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
+
+[node name="SinkingLily7" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(1242.55, 1899.95)
+scale = Vector2(1.05, 1.05)
+skew = 0.167552
+
+[node name="SinkingLily8" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(1483.65, 1765.13)
+rotation = 0.111701
+scale = Vector2(0.8, 0.8)
+skew = 0.167552
+
+[node name="SinkingLily5" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
+
+[node name="SinkingLily6" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(983.59, 1846.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
+
+[node name="SinkingLily2" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
+scale = Vector2(0.75, 0.75)
+skew = -0.223402
+
+[node name="SinkingLily3" parent="AllPads/Pads2" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
+
+[node name="Pads3" type="Node2D" parent="AllPads"]
+position = Vector2(2972.02, -28.7302)
+
+[node name="SinkingLily" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
+
+[node name="SinkingLily4" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
+
+[node name="SinkingLily7" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(1242.55, 1899.95)
+scale = Vector2(1.05, 1.05)
+skew = 0.167552
+
+[node name="SinkingLily8" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(1483.65, 1765.13)
+rotation = 0.111701
+scale = Vector2(0.8, 0.8)
+skew = 0.167552
+
+[node name="SinkingLily5" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
+
+[node name="SinkingLily6" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(983.59, 1846.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
+
+[node name="SinkingLily2" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
+scale = Vector2(0.75, 0.75)
+skew = -0.223402
+
+[node name="SinkingLily3" parent="AllPads/Pads3" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
+
+[node name="Pads4" type="Node2D" parent="AllPads"]
+position = Vector2(4360.97, 39.3306)
+
+[node name="SinkingLily" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
+
+[node name="SinkingLily4" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
+
+[node name="SinkingLily7" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(1242.55, 1899.95)
+scale = Vector2(1.05, 1.05)
+skew = 0.167552
+
+[node name="SinkingLily8" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(1483.65, 1765.13)
+rotation = 0.111701
+scale = Vector2(0.8, 0.8)
+skew = 0.167552
+
+[node name="SinkingLily5" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
+
+[node name="SinkingLily6" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(983.59, 1846.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
+
+[node name="SinkingLily2" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
+scale = Vector2(0.75, 0.75)
+skew = -0.223402
+
+[node name="SinkingLily3" parent="AllPads/Pads4" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
+
+[node name="Pads5" type="Node2D" parent="AllPads"]
+position = Vector2(5876.01, -16.5124)
+
+[node name="SinkingLily" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
+
+[node name="SinkingLily4" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
+
+[node name="SinkingLily7" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(1242.55, 1899.95)
+scale = Vector2(1.05, 1.05)
+skew = 0.167552
+
+[node name="SinkingLily8" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(1483.65, 1765.13)
+rotation = 0.111701
+scale = Vector2(0.8, 0.8)
+skew = 0.167552
+
+[node name="SinkingLily5" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
+
+[node name="SinkingLily6" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(983.59, 1846.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
+
+[node name="SinkingLily2" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
+scale = Vector2(0.75, 0.75)
+skew = -0.223402
+
+[node name="SinkingLily3" parent="AllPads/Pads5" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
+
+[node name="Pads6" type="Node2D" parent="AllPads"]
+position = Vector2(7293.97, 46.5706)
+
+[node name="SinkingLily" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
+
+[node name="SinkingLily4" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
+
+[node name="SinkingLily7" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(1242.55, 1899.95)
+scale = Vector2(1.05, 1.05)
+skew = 0.167552
+
+[node name="SinkingLily8" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(1483.65, 1765.13)
+rotation = 0.111701
+scale = Vector2(0.8, 0.8)
+skew = 0.167552
+
+[node name="SinkingLily5" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
+
+[node name="SinkingLily6" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(983.59, 1846.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
+
+[node name="SinkingLily2" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
+scale = Vector2(0.75, 0.75)
+skew = -0.223402
+
+[node name="SinkingLily3" parent="AllPads/Pads6" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
+
 [node name="BigMushroom" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="BigMushroom"]
@@ -98,49 +387,28 @@ shape = SubResource("RectangleShape2D_o5wbv")
 [node name="Area2D" type="Area2D" parent="BigMushroom"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BigMushroom/Area2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BigMushroom"]
+position = Vector2(7930.83, 1539.06)
+shape = SubResource("RectangleShape2D_s6ikc")
 
 [node name="Sprite2D2" type="Sprite2D" parent="BigMushroom"]
 position = Vector2(8313.79, 1584.35)
 texture = ExtResource("3_5rfim")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BigMushroom"]
+position = Vector2(7928.51, 1542.33)
+shape = SubResource("RectangleShape2D_s6ikc")
+
+[node name="Borders" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders"]
+position = Vector2(-83.8004, 1042.93)
+shape = SubResource("RectangleShape2D_036lt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Borders"]
+position = Vector2(8283.2, 1052.33)
+shape = SubResource("RectangleShape2D_036lt")
+
 [node name="Player" parent="." instance=ExtResource("1_cd1xg")]
-position = Vector2(694.48, 680.531)
-
-[node name="Pads" type="Node2D" parent="."]
-
-[node name="SinkingLily" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(139.544, 1907.11)
-skew = 0.167552
-
-[node name="SinkingLily4" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(869.682, 1726.66)
-rotation = 0.111701
-scale = Vector2(1.15, 1.15)
-skew = 0.167552
-
-[node name="SinkingLily5" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(1110.76, 1620.85)
-scale = Vector2(0.45, 0.45)
-skew = 0.20944
-
-[node name="SinkingLily6" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(983.588, 1848.75)
-rotation = 0.111701
-scale = Vector2(0.55, 0.55)
-skew = 0.0977384
-
-[node name="SinkingLily2" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(347.657, 1759.27)
-rotation = 0.0558505
-scale = Vector2(0.75, 0.75)
-skew = -0.223402
-
-[node name="SinkingLily3" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(648.543, 1908.5)
-rotation = -0.169297
-scale = Vector2(0.75, 0.75)
-skew = -0.460767
+position = Vector2(307.769, 302.235)
 
 [connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]
