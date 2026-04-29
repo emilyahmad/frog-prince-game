@@ -50,7 +50,6 @@ script = ExtResource("1_phjy2")
 [node name="StaticLilyCollision" type="CollisionShape2D" parent="StaticLily"]
 position = Vector2(1, 2.3125)
 shape = SubResource("RectangleShape2D_phjy2")
-one_way_collision = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, 1)

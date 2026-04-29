@@ -1,5 +1,7 @@
 extends Node2D
 
+var bigMushroom = false
+
 var died = false
 
 var bounce = false

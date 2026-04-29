@@ -24,7 +24,7 @@ offset_bottom = 836.0
 texture = ExtResource("1_py8sg")
 
 [node name="Player" parent="." instance=ExtResource("3_xeklh")]
-position = Vector2(788, 443)
+position = Vector2(701, 240)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(-33, 1)

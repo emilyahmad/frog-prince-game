@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=16 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://5h5ecyaeckwu" path="res://sinking_lily.tscn" id="4_r4wdr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_843q2"]
-size = Vector2(8208.35, 139.44)
+size = Vector2(8206.42, 47.6962)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
 size = Vector2(677.963, 45.8385)
@@ -33,6 +33,9 @@ size = Vector2(1026.7, 92.3773)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_036lt"]
 size = Vector2(187.601, 2105.86)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlxio"]
+size = Vector2(222.639, 2155.84)
+
 [node name="LevelOne" type="Node2D"]
 rotation = -0.000763722
 script = ExtResource("1_y8ti4")
@@ -48,7 +51,7 @@ texture = ExtResource("2_5rfim")
 position = Vector2(-2.0002, 0.254883)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water"]
-position = Vector2(4101.7, 1996.72)
+position = Vector2(4102.67, 2042.59)
 shape = SubResource("RectangleShape2D_843q2")
 
 [node name="Trees" type="Node2D" parent="."]
@@ -58,10 +61,12 @@ shape = SubResource("RectangleShape2D_843q2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree1"]
 position = Vector2(808.844, 1513.62)
 shape = SubResource("RectangleShape2D_r4wdr")
+one_way_collision = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Trees/Tree1"]
 position = Vector2(428.522, 1462.07)
 shape = SubResource("RectangleShape2D_bhu28")
+one_way_collision = true
 
 [node name="Tree2" type="StaticBody2D" parent="Trees"]
 position = Vector2(-0.0870643, 114)
@@ -69,6 +74,7 @@ position = Vector2(-0.0870643, 114)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree2"]
 position = Vector2(1701.93, 1396.3)
 shape = SubResource("RectangleShape2D_4p75b")
+one_way_collision = true
 
 [node name="Tree3" type="StaticBody2D" parent="Trees"]
 position = Vector2(3689.9, 134.818)
@@ -76,6 +82,7 @@ position = Vector2(3689.9, 134.818)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree3"]
 position = Vector2(1701.93, 1396.3)
 shape = SubResource("RectangleShape2D_4p75b")
+one_way_collision = true
 
 [node name="Tree4" type="StaticBody2D" parent="Trees"]
 position = Vector2(-2.0002, 0.254883)
@@ -83,6 +90,7 @@ position = Vector2(-2.0002, 0.254883)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree4"]
 position = Vector2(4215.52, 1455.08)
 shape = SubResource("RectangleShape2D_y8ti4")
+one_way_collision = true
 
 [node name="Tree5" type="StaticBody2D" parent="Trees"]
 position = Vector2(1871.95, 67.4297)
@@ -90,12 +98,14 @@ position = Vector2(1871.95, 67.4297)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree5"]
 position = Vector2(1701.94, 1387.3)
 shape = SubResource("RectangleShape2D_astit")
+one_way_collision = true
 
 [node name="Tree6" type="StaticBody2D" parent="Trees"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree6"]
 position = Vector2(6743.92, 1525.32)
 shape = SubResource("RectangleShape2D_o5wbv")
+one_way_collision = true
 
 [node name="AllPads" type="Node2D" parent="."]
 
@@ -381,10 +391,12 @@ scale = Vector2(0.75, 0.75)
 skew = -0.460767
 
 [node name="BigMushroom" type="StaticBody2D" parent="."]
+position = Vector2(-9.89002, -144.008)
 
 [node name="Sprite2D" type="Sprite2D" parent="BigMushroom"]
 
 [node name="Area2D" type="Area2D" parent="BigMushroom"]
+position = Vector2(-0.992362, -10.0008)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BigMushroom/Area2D"]
 position = Vector2(7930.83, 1539.06)
@@ -395,20 +407,39 @@ position = Vector2(8313.79, 1584.35)
 texture = ExtResource("3_5rfim")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="BigMushroom"]
-position = Vector2(7928.51, 1542.33)
+position = Vector2(7923.77, 1610.05)
 shape = SubResource("RectangleShape2D_s6ikc")
 
-[node name="Borders" type="Area2D" parent="."]
+[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(7426.27, 956.672)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders"]
+[node name="BordersStatic" type="StaticBody2D" parent="."]
+
+[node name="BordersArea" type="Area2D" parent="BordersStatic"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BordersStatic/BordersArea"]
 position = Vector2(-83.8004, 1042.93)
 shape = SubResource("RectangleShape2D_036lt")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Borders"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BordersStatic/BordersArea"]
 position = Vector2(8283.2, 1052.33)
 shape = SubResource("RectangleShape2D_036lt")
 
-[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
-position = Vector2(307.769, 302.235)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BordersStatic"]
+position = Vector2(-101.319, 1067.92)
+shape = SubResource("RectangleShape2D_nlxio")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BordersStatic"]
+position = Vector2(8301.19, 1060.34)
+shape = SubResource("RectangleShape2D_nlxio")
+
+[node name="SkyLevelBorder" type="Area2D" parent="."]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="SkyLevelBorder"]
+position = Vector2(7496.07, -91.2751)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_036lt")
 
 [connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]
+[connection signal="body_entered" from="BigMushroom/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SkyLevelBorder" to="." method="_on_sky_level_border_body_entered"]

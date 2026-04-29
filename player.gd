@@ -21,7 +21,7 @@ func _update_camera_limits():
 	if GameState.action_scene == true:
 		$Camera2D.limit_left = 14
 		$Camera2D.limit_top = 0
-		$Camera2D.limit_right = 10000   # was -100000, must be positive
+		$Camera2D.limit_right = 8208   # was -100000, must be positive
 		$Camera2D.limit_bottom = 2000  # was -100000, must be positive
 	elif GameState.sky_scene == true:
 		$Camera2D.limit_left = 14
@@ -58,7 +58,14 @@ func _input(event):
 	else:
 		set_collision_mask_value(10, true)
 
+func _big_mushroom_jump():
+	velocity.y = jump_power * (3 * jump_multiplier)
+
 func _physics_process(delta: float) -> void:
+	if (GameState.bigMushroom == true):
+		_big_mushroom_jump()
+		GameState.bigMushroom = false
+	
 	if (GameState.bounce == true):
 		velocity.y = jump_power * jump_multiplier
 		is_hopping = true

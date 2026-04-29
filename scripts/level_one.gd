@@ -8,8 +8,14 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+# dies/reload scene
 func _on_water_body_entered(body: CharacterBody2D) -> void:
 	SceneTransition.change_scene("res://scenes/level_one.tscn")
 
-func _on_big_shroom_body_entered(body: CharacterBody2D) -> void:
+# big jump in player script
+func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
+	GameState.bigMushroom = true
+
+# go to sky scene
+func _on_sky_level_border_body_entered(body: CharacterBody2D) -> void:
 	SceneTransition.change_scene("res://sky.tscn")
