@@ -442,9 +442,6 @@ position = Vector2(7496.07, -91.2751)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_036lt")
 
-[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
-position = Vector2(444.058, 1233.34)
-
 [node name="Rocks" type="Node2D" parent="."]
 
 [node name="PrettyRock" parent="Rocks" instance=ExtResource("6_bhu28")]
@@ -472,26 +469,6 @@ position = Vector2(5809.96, 1364.44)
 scale = Vector2(0.17, 0.17)
 
 [node name="Sprouts" type="Node2D" parent="."]
-
-[node name="A_Sprout1" type="Sprite2D" parent="Sprouts"]
-position = Vector2(-5969.52, 818.544)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("7_o5wbv")
-
-[node name="B_Sprout1" type="Sprite2D" parent="Sprouts"]
-position = Vector2(-5019.52, 819.27)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("8_s6ikc")
-
-[node name="C_Sprout1" type="Sprite2D" parent="Sprouts"]
-position = Vector2(-4071.5, 781.994)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("9_036lt")
-
-[node name="D_Sprout1" type="Sprite2D" parent="Sprouts"]
-position = Vector2(-3017.91, 791.386)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("10_nlxio")
 
 [node name="A_Sprouts" type="Node2D" parent="Sprouts"]
 
@@ -606,6 +583,212 @@ texture = ExtResource("8_s6ikc")
 position = Vector2(7336.97, 1354.6)
 scale = Vector2(0.23, 0.23)
 texture = ExtResource("8_s6ikc")
+
+[node name="C_Sprouts" type="Node2D" parent="Sprouts"]
+
+[node name="C_Sprout2" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(327.885, 1460.25)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout3" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(431.504, 1959.33)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout4" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(754.482, 1987.58)
+rotation = -0.296706
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout5" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(1149.94, 1384.88)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout6" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(2121.97, 1353.62)
+rotation = 0.237365
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout7" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(2221.47, 1999.7)
+rotation = 0.237365
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout8" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(3002.94, 1388.29)
+rotation = -0.178024
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout9" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(3233.86, 1500.47)
+rotation = -0.0593412
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout10" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(3320.45, 2026.54)
+rotation = -0.0593412
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout11" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(3898.5, 1958.98)
+rotation = 0.0593412
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout12" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(3887.95, 1372.97)
+rotation = 0.0593412
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout13" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(4462.94, 1387.41)
+rotation = -0.174533
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout14" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(4885.49, 1975.73)
+rotation = 0.00349066
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout15" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(5347.47, 2005.08)
+rotation = 0.00349066
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout16" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(5748.94, 1387.39)
+rotation = 0.00349066
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout17" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(6089.92, 1410.65)
+rotation = 0.181514
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout18" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(6619.46, 2023.06)
+rotation = 0.178024
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("9_036lt")
+
+[node name="C_Sprout19" type="Sprite2D" parent="Sprouts/C_Sprouts"]
+position = Vector2(7283.92, 1418.56)
+rotation = -0.0593412
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_036lt")
+
+[node name="D_Sprouts" type="Node2D" parent="Sprouts"]
+
+[node name="D_Sprout2" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(332.495, 1971.25)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout3" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(849.461, 2015.65)
+rotation = 0.178024
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout4" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(1210.95, 1369.93)
+rotation = 0.178024
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout5" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(2038.95, 1370.56)
+rotation = -0.178024
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout6" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(2318.48, 1986.77)
+rotation = -0.178024
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout7" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(2661.95, 1373.03)
+rotation = 0.237365
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout8" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(3183.89, 1460.43)
+rotation = 0.237365
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout9" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(3456.45, 2033.64)
+rotation = -0.296706
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout10" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(3937.47, 2001.01)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout11" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(4538.93, 1406.47)
+rotation = -0.0593412
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout12" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(5131.8, 1572.92)
+rotation = -0.0593412
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout13" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(4784.49, 1984.65)
+rotation = -0.0593412
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout14" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(5298.46, 2020.05)
+rotation = -0.0593412
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout15" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(5777.92, 1411.41)
+rotation = -0.0593412
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout16" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(6037.94, 1390.61)
+rotation = -0.356047
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("10_nlxio")
+
+[node name="D_Sprout17" type="Sprite2D" parent="Sprouts/D_Sprouts"]
+position = Vector2(7315.93, 1402.59)
+rotation = 0.0593412
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("10_nlxio")
+
+[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(444.058, 1233.34)
 
 [connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]
 [connection signal="body_entered" from="BigMushroom/Area2D" to="." method="_on_area_2d_body_entered"]
