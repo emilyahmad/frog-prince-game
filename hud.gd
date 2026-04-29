@@ -32,6 +32,7 @@ func _on_settings_button_pressed() -> void:
 
 func _on_volume_btn_pressed() -> void:
 	# mute all
+	pass
 	if ($GameState.muted == true):
 		$GameState.muted = false;
 		$Settings/VolumeLbl.text = "Music On"
