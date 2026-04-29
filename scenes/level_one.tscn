@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=22 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dlhm6hejanaxg" path="res://assets/swamp-decor/2.png" id="8_s6ikc"]
 [ext_resource type="Texture2D" uid="uid://bqxggoh138v2m" path="res://assets/swamp-decor/3.png" id="9_036lt"]
 [ext_resource type="Texture2D" uid="uid://csoa6hororn00" path="res://assets/swamp-decor/4.png" id="10_nlxio"]
+[ext_resource type="PackedScene" uid="uid://dteo4tl24vbsk" path="res://mushroom.tscn" id="11_s6ikc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_843q2"]
 size = Vector2(8206.42, 47.6962)
@@ -738,6 +739,131 @@ position = Vector2(7315.93, 1402.59)
 rotation = 0.0593412
 scale = Vector2(0.095, 0.095)
 texture = ExtResource("10_nlxio")
+
+[node name="SmallMushrooms" type="Node2D" parent="."]
+
+[node name="Mushroom" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(643.992, 1320.49)
+rotation = 0.0174533
+scale = Vector2(0.26, 0.26)
+
+[node name="Mushroom2" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(708.947, 1378.54)
+rotation = -0.0174533
+scale = Vector2(0.15, 0.15)
+
+[node name="Mushroom3" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(1040.97, 1342.8)
+rotation = -0.0174533
+scale = Vector2(0.135, 0.135)
+
+[node name="Mushroom4" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(1494.92, 1420.14)
+rotation = -0.0174533
+scale = Vector2(0.13, 0.13)
+
+[node name="Mushroom5" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(1803.97, 1348.38)
+rotation = -0.0174533
+scale = Vector2(0.2, 0.2)
+
+[node name="Mushroom6" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(1910.99, 1328.46)
+rotation = 0.0174533
+scale = Vector2(0.24, 0.24)
+
+[node name="Mushroom7" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(3412.98, 1341.61)
+rotation = -0.0349066
+scale = Vector2(0.22, 0.22)
+
+[node name="Mushroom8" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(3467.94, 1390.65)
+rotation = -0.0349066
+scale = Vector2(0.09, 0.09)
+
+[node name="Mushroom9" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(3508.95, 1380.68)
+rotation = -0.0349066
+scale = Vector2(0.12, 0.12)
+
+[node name="Mushroom10" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(3713.97, 1345.84)
+rotation = -0.0349066
+scale = Vector2(0.11, 0.11)
+
+[node name="Mushroom11" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(3753.95, 1377.87)
+scale = Vector2(0.1, 0.1)
+
+[node name="Mushroom12" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(4032.95, 1378.08)
+rotation = -0.0349066
+scale = Vector2(0.09, 0.09)
+
+[node name="Mushroom13" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(4086.96, 1358.12)
+rotation = -0.0349066
+scale = Vector2(0.12, 0.12)
+
+[node name="Mushroom14" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(4336.95, 1383.31)
+rotation = 0.0349066
+scale = Vector2(0.1, 0.1)
+
+[node name="Mushroom15" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(4374.93, 1401.34)
+rotation = -0.0174533
+scale = Vector2(0.08, 0.08)
+
+[node name="Mushroom16" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(5242.89, 1459)
+scale = Vector2(0.09, 0.09)
+
+[node name="Mushroom17" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(5288.9, 1447.04)
+rotation = -0.00872665
+scale = Vector2(0.12, 0.12)
+
+[node name="Mushroom18" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(5310.87, 1476.06)
+rotation = -0.00872665
+scale = Vector2(0.08, 0.08)
+
+[node name="Mushroom19" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(5616.91, 1424.29)
+rotation = -0.00872665
+scale = Vector2(0.21, 0.21)
+
+[node name="Mushroom20" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(5538.88, 1475.23)
+rotation = -0.00872665
+scale = Vector2(0.09, 0.09)
+
+[node name="Mushroom21" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(6463.88, 1469.94)
+rotation = -0.00872665
+scale = Vector2(0.12, 0.12)
+
+[node name="Mushroom22" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(6539.89, 1450)
+rotation = -0.00872665
+scale = Vector2(0.15, 0.15)
+
+[node name="Mushroom23" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(6562.86, 1491.01)
+rotation = -0.00872665
+scale = Vector2(0.09, 0.09)
+
+[node name="Mushroom24" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(6980.88, 1463.33)
+rotation = 0.0174533
+scale = Vector2(0.12, 0.12)
+
+[node name="Mushroom25" parent="SmallMushrooms" instance=ExtResource("11_s6ikc")]
+position = Vector2(7032.9, 1442.37)
+rotation = -0.0174533
+scale = Vector2(0.14, 0.14)
 
 [node name="Player" parent="." instance=ExtResource("1_cd1xg")]
 position = Vector2(444.058, 1233.34)
