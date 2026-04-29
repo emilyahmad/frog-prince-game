@@ -4,8 +4,8 @@ class_name PlayerController
 @export var speed = 10.0
 @export var jump_power = 15.0
 
-var speed_multiplier = 60.0
-var jump_multiplier = -70.0
+var speed_multiplier = 45.0
+var jump_multiplier = -55.0
 var direction = 0
 
 var is_hopping = false
@@ -31,7 +31,7 @@ func _update_camera_limits():
 	else:
 		$Camera2D.limit_left = 0
 		$Camera2D.limit_top = 0
-		$Camera2D.limit_right = 1920
+		$Camera2D.limit_right = 1913
 		$Camera2D.limit_bottom = 1080
 
 

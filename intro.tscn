@@ -58,8 +58,9 @@ size = Vector2(290, 59.25)
 script = ExtResource("1_y6ycx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -23.0
+offset_right = 1897.0
+offset_bottom = 1080.0
 texture = ExtResource("1_s2ta7")
 
 [node name="SlideLabel" type="RichTextLabel" parent="."]
@@ -131,7 +132,7 @@ position = Vector2(-122.5, 519)
 shape = SubResource("RectangleShape2D_7ufi4")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Borders"]
-position = Vector2(2050, 524)
+position = Vector2(2026, 527)
 shape = SubResource("RectangleShape2D_7ufi4")
 
 [node name="Mushroom" parent="." instance=ExtResource("8_dpxxx")]
@@ -155,17 +156,25 @@ shape = SubResource("RectangleShape2D_h0kys")
 position = Vector2(106, 49)
 shape = SubResource("RectangleShape2D_d0rr7")
 
-[node name="SinkingLily" parent="." instance=ExtResource("9_dk2oa")]
-position = Vector2(1613, 924)
-
-[node name="Player" parent="." instance=ExtResource("2_u2rf6")]
-position = Vector2(287, 827)
-
 [node name="Water" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water"]
 position = Vector2(1650, 1033.62)
 shape = SubResource("RectangleShape2D_wby50")
+
+[node name="SinkingLily" parent="." instance=ExtResource("9_dk2oa")]
+position = Vector2(1724, 950)
+rotation = 0.0558505
+skew = -0.111701
+
+[node name="SinkingLily2" parent="." instance=ExtResource("9_dk2oa")]
+position = Vector2(1550, 860)
+rotation = -0.0558505
+scale = Vector2(0.45, 0.45)
+skew = 0.153589
+
+[node name="Player" parent="." instance=ExtResource("2_u2rf6")]
+position = Vector2(185, 839)
 
 [connection signal="body_entered" from="EndArea/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]

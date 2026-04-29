@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dhbqg5dgmq5gg"]
+[gd_scene load_steps=13 format=3 uid="uid://dhbqg5dgmq5gg"]
 
 [ext_resource type="Script" uid="uid://x8j188qtlx6s" path="res://player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://bubmesl0epll3" path="res://assets/anim/idle/f1.png" id="2_dw050"]
@@ -50,25 +50,39 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dw050"]
-radius = 44.6959
-height = 110.219
+radius = 40.41
+height = 90.7686
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b26j0"]
+radius = 7.0
+height = 32.5104
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4flbx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(-15, 0)
-zoom = Vector2(1.25, 1.25)
+zoom = Vector2(1.35, 1.35)
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_b26j0")
-animation = &"jump"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(9, 3)
+position = Vector2(5, -7)
 rotation = 3.14159
 scale = Vector2(1.63326, -0.92543)
 shape = SubResource("CapsuleShape2D_dw050")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-58, 34)
+rotation = -1.41057
+shape = SubResource("CapsuleShape2D_b26j0")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(28, 43)
+rotation = -1.41057
+shape = SubResource("CapsuleShape2D_b26j0")

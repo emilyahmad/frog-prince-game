@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cow6ew3dpuob2" path="res://assets/obstacles/sinking-lily/lily3.png" id="3_312te"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_phjy2"]
-size = Vector2(181, 81.25)
+size = Vector2(181, 64.625)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xepnj"]
 animations = [{
@@ -18,35 +18,47 @@ animations = [{
 "texture": ExtResource("2_phjy2")
 }, {
 "duration": 1.0,
+"texture": ExtResource("1_5lvpv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5lvpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_phjy2")
+}, {
+"duration": 1.0,
 "texture": ExtResource("3_312te")
 }],
 "loop": false,
-"name": &"default",
-"speed": 5.0
+"name": &"sink",
+"speed": 2.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lvpv"]
-size = Vector2(202, 125)
+size = Vector2(203, 36)
 
 [node name="SinkingLily" type="Node2D"]
 script = ExtResource("1_phjy2")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticLily" type="StaticBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1, -6)
+[node name="StaticLilyCollision" type="CollisionShape2D" parent="StaticLily"]
+position = Vector2(1, 2.3125)
 shape = SubResource("RectangleShape2D_phjy2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, 1)
 sprite_frames = SubResource("SpriteFrames_xepnj")
-frame = 2
-frame_progress = 1.0
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="AreaLily" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(6, -9.5)
+[node name="LilyCollision" type="CollisionShape2D" parent="AreaLily"]
+position = Vector2(5.5, -15)
 shape = SubResource("RectangleShape2D_5lvpv")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="AreaLily" to="." method="_on_area_2d_body_entered"]

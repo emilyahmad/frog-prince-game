@@ -4,7 +4,7 @@ var currentIndex := 0
 var length = len(exposition)
 
 var exposition: Array[String] = [
-	"In a quiet little home, Frogyu sleeps peacefully through the night.",
+	"In a quiet little home, Frogyu sleeps peacefully through the night. (Click the lilypad to continue!)",
 	"But tonight, a curious dream begins to take shape In the distance, a mysterious princess appears.",
 	"Though they share no words, his heart feels drawn to her.",
 	"Suddenly, Frogyu awakens from his dream. But the memory of the princess lingers in his mind. He must find her!"
