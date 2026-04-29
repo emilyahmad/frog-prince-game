@@ -52,7 +52,8 @@ func play_next():
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if (finishedInstruction):
 		SceneTransition.change_scene("res://scenes/level_one.tscn")
-#
+
+# hit water (sink)
 func _on_water_body_entered(body: CharacterBody2D) -> void:
 	SceneTransition.change_scene("res://scenes/intro.tscn")
 	GameState.died = true

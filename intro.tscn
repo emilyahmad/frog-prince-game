@@ -52,7 +52,7 @@ size = Vector2(90.8356, 595.575)
 size = Vector2(20, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wby50"]
-size = Vector2(290, 59.25)
+size = Vector2(327, 28.2451)
 
 [node name="Intro" type="Node2D"]
 script = ExtResource("1_y6ycx")
@@ -148,7 +148,7 @@ scale = Vector2(0.15, 0.15)
 position = Vector2(1, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EndArea/Area2D"]
-position = Vector2(1860, 583)
+position = Vector2(1888, 583)
 scale = Vector2(1.11145, 1.56019)
 shape = SubResource("RectangleShape2D_h0kys")
 
@@ -159,7 +159,7 @@ shape = SubResource("RectangleShape2D_d0rr7")
 [node name="Water" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Water"]
-position = Vector2(1650, 1033.62)
+position = Vector2(1674.5, 1049)
 shape = SubResource("RectangleShape2D_wby50")
 
 [node name="SinkingLily" parent="." instance=ExtResource("9_dk2oa")]

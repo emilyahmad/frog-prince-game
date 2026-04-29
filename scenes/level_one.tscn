@@ -1,32 +1,35 @@
-[gd_scene load_steps=11 format=3 uid="uid://dkygou7pffnkk"]
+[gd_scene load_steps=13 format=3 uid="uid://dkygou7pffnkk"]
 
 [ext_resource type="PackedScene" uid="uid://dhbqg5dgmq5gg" path="res://player.tscn" id="1_cd1xg"]
 [ext_resource type="Script" uid="uid://3fpc082wn352" path="res://scripts/level_one.gd" id="1_y8ti4"]
 [ext_resource type="Texture2D" uid="uid://blx2e1ql2bgb6" path="res://assets/forest-background.png" id="2_5rfim"]
+[ext_resource type="Texture2D" uid="uid://cpfsjeqqnrm74" path="res://assets/mushroom/bigMushroom.png" id="3_5rfim"]
 [ext_resource type="PackedScene" uid="uid://5h5ecyaeckwu" path="res://sinking_lily.tscn" id="4_r4wdr"]
-[ext_resource type="PackedScene" uid="uid://dteo4tl24vbsk" path="res://mushroom.tscn" id="5_bhu28"]
-[ext_resource type="Script" uid="uid://buyd1p6l76262" path="res://scripts/big_shroom.gd" id="6_4p75b"]
-[ext_resource type="Texture2D" uid="uid://cno12x4nkwnbj" path="res://IMG_4468.png" id="6_bhu28"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_843q2"]
 size = Vector2(8208.35, 139.44)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p75b"]
-size = Vector2(466.998, 34.7009)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4wdr"]
+size = Vector2(677.963, 45.8385)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhu28"]
-size = Vector2(1664.01, 184.676)
+size = Vector2(92.6805, 56.5916)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p75b"]
+size = Vector2(567.475, 37.4296)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8ti4"]
+size = Vector2(448.749, 25.9003)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_astit"]
+size = Vector2(532.489, 33.2826)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5wbv"]
+size = Vector2(885.849, 29.665)
 
 [node name="LevelOne" type="Node2D"]
 rotation = -0.000763722
 script = ExtResource("1_y8ti4")
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 8157.61
-offset_top = 519.23
-offset_right = 10423.6
-offset_bottom = 2007.23
-texture = ExtResource("6_bhu28")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -2.0002
@@ -35,9 +38,6 @@ offset_right = 8190.0
 offset_bottom = 2048.25
 texture = ExtResource("2_5rfim")
 
-[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
-position = Vector2(177.331, 876.392)
-
 [node name="Water" type="Area2D" parent="."]
 position = Vector2(-2.0002, 0.254883)
 
@@ -45,316 +45,102 @@ position = Vector2(-2.0002, 0.254883)
 position = Vector2(4101.7, 1996.72)
 shape = SubResource("RectangleShape2D_843q2")
 
-[node name="Mushrooms" type="Node2D" parent="."]
+[node name="Trees" type="Node2D" parent="."]
+
+[node name="Tree1" type="StaticBody2D" parent="Trees"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree1"]
+position = Vector2(808.844, 1513.62)
+shape = SubResource("RectangleShape2D_r4wdr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Trees/Tree1"]
+position = Vector2(428.522, 1462.07)
+shape = SubResource("RectangleShape2D_bhu28")
+
+[node name="Tree2" type="StaticBody2D" parent="Trees"]
+position = Vector2(-0.0870643, 114)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree2"]
+position = Vector2(1701.93, 1396.3)
+shape = SubResource("RectangleShape2D_4p75b")
+
+[node name="Tree3" type="StaticBody2D" parent="Trees"]
+position = Vector2(3689.9, 134.818)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree3"]
+position = Vector2(1701.93, 1396.3)
+shape = SubResource("RectangleShape2D_4p75b")
+
+[node name="Tree4" type="StaticBody2D" parent="Trees"]
 position = Vector2(-2.0002, 0.254883)
 
-[node name="Mushroom" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(572.999, 1311.44)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree4"]
+position = Vector2(4215.52, 1455.08)
+shape = SubResource("RectangleShape2D_y8ti4")
 
-[node name="Mushroom2" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(662.941, 1386.51)
-scale = Vector2(0.15, 0.15)
+[node name="Tree5" type="StaticBody2D" parent="Trees"]
+position = Vector2(1871.95, 67.4297)
 
-[node name="Mushroom4" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(1531.92, 1409.17)
-scale = Vector2(0.15, 0.15)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree5"]
+position = Vector2(1701.94, 1387.3)
+shape = SubResource("RectangleShape2D_astit")
 
-[node name="Mushroom5" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(1824.9, 1445.39)
-scale = Vector2(0.18, 0.18)
+[node name="Tree6" type="StaticBody2D" parent="Trees"]
 
-[node name="Mushroom6" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(3503.95, 1379.68)
-scale = Vector2(0.09, 0.09)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/Tree6"]
+position = Vector2(6743.92, 1525.32)
+shape = SubResource("RectangleShape2D_o5wbv")
 
-[node name="Mushroom7" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(4381.96, 1367.35)
-scale = Vector2(0.15, 0.15)
+[node name="BigMushroom" type="StaticBody2D" parent="."]
 
-[node name="Mushroom8" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(4286.91, 1430.27)
-scale = Vector2(0.05, 0.05)
+[node name="Sprite2D" type="Sprite2D" parent="BigMushroom"]
 
-[node name="Mushroom9" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(4286.91, 1430.27)
-scale = Vector2(0.05, 0.05)
+[node name="Area2D" type="Area2D" parent="BigMushroom"]
 
-[node name="Mushroom10" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(5267.85, 1505.02)
-scale = Vector2(0.1, 0.1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BigMushroom/Area2D"]
 
-[node name="Mushroom11" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(5379.92, 1415.11)
-scale = Vector2(0.11, 0.11)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BigMushroom"]
 
-[node name="Mushroom12" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(5610.85, 1512.29)
-scale = Vector2(0.13, 0.13)
+[node name="Sprite2D2" type="Sprite2D" parent="BigMushroom"]
+position = Vector2(8313.79, 1584.35)
+texture = ExtResource("3_5rfim")
 
-[node name="Mushroom13" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(6634.92, 1418.07)
-scale = Vector2(0.14, 0.14)
-
-[node name="Mushroom14" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(6898.86, 1497.27)
-scale = Vector2(0.08, 0.08)
-
-[node name="Mushroom15" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(6961.89, 1461.32)
-scale = Vector2(0.1, 0.1)
-
-[node name="Mushroom16" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(7701.86, 1488.88)
-scale = Vector2(0.15, 0.15)
-
-[node name="Mushroom17" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(7880.95, 1376.02)
-scale = Vector2(0.08, 0.08)
-
-[node name="Mushroom18" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(7917.94, 1398.05)
-scale = Vector2(0.05, 0.05)
-
-[node name="Mushroom3" parent="Mushrooms" instance=ExtResource("5_bhu28")]
-position = Vector2(936.964, 1356.72)
-scale = Vector2(0.1, 0.1)
-
-[node name="Tree" type="StaticBody2D" parent="."]
-position = Vector2(-2.0002, 0.254883)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree"]
-position = Vector2(780.843, 1515.6)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Tree"]
-position = Vector2(1686.84, 1522.29)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Tree"]
-position = Vector2(3559.87, 1477.72)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="Tree"]
-position = Vector2(4238.89, 1453.24)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="Tree"]
-position = Vector2(5401.81, 1553.13)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="Tree"]
-position = Vector2(6556.82, 1544.01)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="Tree"]
-position = Vector2(6954.84, 1524.31)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="Tree"]
-position = Vector2(7635.83, 1528.83)
-shape = SubResource("RectangleShape2D_4p75b")
-
-[node name="BigShroom" type="Area2D" parent="Tree"]
-script = ExtResource("6_4p75b")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree/BigShroom"]
-position = Vector2(9520.99, 1406.99)
-shape = SubResource("RectangleShape2D_bhu28")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree/BigShroom"]
-position = Vector2(9133.48, 1990.72)
-shape = SubResource("RectangleShape2D_bhu28")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Tree/BigShroom"]
-position = Vector2(10794.5, 1989.99)
-shape = SubResource("RectangleShape2D_bhu28")
+[node name="Player" parent="." instance=ExtResource("1_cd1xg")]
+position = Vector2(694.48, 680.531)
 
 [node name="Pads" type="Node2D" parent="."]
-position = Vector2(-2.0002, 0.254883)
 
-[node name="SinkingLily2" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(367.607, 1824.28)
-scale = Vector2(0.8, 0.8)
+[node name="SinkingLily" parent="Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(139.544, 1907.11)
+skew = 0.167552
 
 [node name="SinkingLily4" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(575.662, 1752.44)
-scale = Vector2(0.5, 0.5)
-
-[node name="SinkingLily3" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(148.789, 1586.11)
-scale = Vector2(1.2, 1.2)
+position = Vector2(869.682, 1726.66)
+rotation = 0.111701
+scale = Vector2(1.15, 1.15)
+skew = 0.167552
 
 [node name="SinkingLily5" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(1088.71, 1683.83)
-scale = Vector2(1.05, 1.05)
+position = Vector2(1110.76, 1620.85)
+scale = Vector2(0.45, 0.45)
+skew = 0.20944
 
 [node name="SinkingLily6" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(1352.61, 1818.03)
-scale = Vector2(0.9, 0.9)
+position = Vector2(983.588, 1848.75)
+rotation = 0.111701
+scale = Vector2(0.55, 0.55)
+skew = 0.0977384
 
-[node name="SinkingLily7" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(1403.74, 1651.07)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily8" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(1797.67, 1740.37)
-scale = Vector2(0.4, 0.4)
-
-[node name="SinkingLily9" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2180.63, 1796.67)
-scale = Vector2(0.4, 0.4)
-
-[node name="SinkingLily10" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2116.78, 1600.62)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily11" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2226.86, 1487.7)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily12" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2349.79, 1580.8)
-scale = Vector2(0.8, 0.8)
-
-[node name="SinkingLily13" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2529.6, 1837.93)
-scale = Vector2(1.2, 1.2)
-
-[node name="SinkingLily14" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2677.88, 1462.05)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily15" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2789.83, 1531.13)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily16" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2641.74, 1652.02)
-scale = Vector2(1.1, 1.1)
-
-[node name="SinkingLily17" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(2934.58, 1858.24)
-scale = Vector2(0.9, 0.9)
-
-[node name="SinkingLily18" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(3197.8, 1569.44)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily19" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(3197.8, 1569.44)
-scale = Vector2(0.7, 0.7)
-
-[node name="SinkingLily20" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(3500.59, 1845.67)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily21" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(3603.72, 1683.75)
-scale = Vector2(1.1, 1.1)
-
-[node name="SinkingLily22" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(3863.79, 1590.95)
-
-[node name="SinkingLily23" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(4087.6, 1834.12)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily24" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(4248.59, 1853.25)
-scale = Vector2(0.9, 0.9)
-
-[node name="SinkingLily25" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(4355.79, 1582.33)
+[node name="SinkingLily2" parent="Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(347.657, 1759.27)
+rotation = 0.0558505
 scale = Vector2(0.75, 0.75)
+skew = -0.223402
 
-[node name="SinkingLily26" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(4598.69, 1720.51)
-scale = Vector2(0.85, 0.85)
-
-[node name="SinkingLily27" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(4912.86, 1497.75)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily28" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(4914.63, 1798.75)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily29" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(5295.61, 1826.04)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily30" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(5384.69, 1723.11)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily31" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(5700.77, 1618.35)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily32" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(5820.56, 1883.45)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily33" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(5960.72, 1678.55)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily34" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6083.85, 1507.65)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily35" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6229.77, 1612.76)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily36" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6399.66, 1755.89)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily37" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6718.66, 1756.13)
-scale = Vector2(0.7, 0.7)
-
-[node name="SinkingLily38" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6868.76, 1632.25)
-scale = Vector2(0.5, 0.5)
-
-[node name="SinkingLily40" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6941.6, 1830.3)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily41" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(7098.69, 1717.42)
-scale = Vector2(0.9, 0.9)
-
-[node name="SinkingLily42" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(7279.88, 1465.56)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily43" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(7347.69, 1715.61)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily44" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(7524.59, 1843.75)
-scale = Vector2(0.9, 0.9)
-
-[node name="SinkingLily45" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(7931.72, 1684.06)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily46" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(8155.79, 1588.23)
-scale = Vector2(0.6, 0.6)
-
-[node name="SinkingLily47" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(8329.61, 1821.36)
-scale = Vector2(1.2, 1.2)
-
-[node name="SinkingLily39" parent="Pads" instance=ExtResource("4_r4wdr")]
-position = Vector2(6578.57, 1869.03)
-rotation = 0.542683
-scale = Vector2(0.6, 0.6)
+[node name="SinkingLily3" parent="Pads" instance=ExtResource("4_r4wdr")]
+position = Vector2(648.543, 1908.5)
+rotation = -0.169297
+scale = Vector2(0.75, 0.75)
+skew = -0.460767
 
 [connection signal="body_entered" from="Water" to="." method="_on_water_body_entered"]
-[connection signal="body_entered" from="Tree/BigShroom" to="." method="_on_big_shroom_body_entered"]
