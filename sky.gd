@@ -10,10 +10,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
-	SceneTransition.change_scene("res://end_scene.tscn")
-
 # falls (dies)
 func _on_area_2d_2_body_entered(body: CharacterBody2D) -> void:
 	SceneTransition.change_scene("res://sky.tscn")
 	$Player.position = Vector2(0,0)
+
+
+func _on_end_area_body_entered(body: CharacterBody2D) -> void:
+	SceneTransition.change_scene("res://end_scene.tscn")
