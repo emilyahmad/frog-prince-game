@@ -1,13 +1,19 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxpjuqihq3uoj"]
 
 [ext_resource type="Script" uid="uid://0t6ui3ypejgu" path="res://scripts/exposition.gd" id="1_u3jjx"]
-[ext_resource type="Texture2D" uid="uid://dbihda7de4a2e" path="res://addons/expo-photos/expo4.png" id="2_imb4w"]
 [ext_resource type="FontFile" uid="uid://bqiheds8xk5t7" path="res://assets/Radley-Regular.ttf" id="3_n5nf8"]
 [ext_resource type="Script" uid="uid://c1652qtxr6h7" path="res://typing.gd" id="4_imb4w"]
 [ext_resource type="Texture2D" uid="uid://d3464u8p4odjk" path="res://assets/lilypad.png" id="4_nc0m0"]
 [ext_resource type="Texture2D" uid="uid://ccgd3umhl31bs" path="res://assets/hover-lilypad.png" id="5_imb4w"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nc0m0"]
+load_path = "res://.godot/imported/expo4.png-817f0970eb3968dc32f808d0768baa13.ctex"
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ceah"]
+content_margin_left = 45.0
+content_margin_top = 45.0
+content_margin_right = 45.0
+content_margin_bottom = 15.0
 
 [sub_resource type="Animation" id="Animation_tcvbv"]
 resource_name = "typing"
@@ -43,7 +49,7 @@ script = ExtResource("1_u3jjx")
 layout_mode = 0
 offset_right = 1902.22
 offset_bottom = 1070.0
-texture = ExtResource("2_imb4w")
+texture = SubResource("CompressedTexture2D_nc0m0")
 expand_mode = 3
 stretch_mode = 3
 

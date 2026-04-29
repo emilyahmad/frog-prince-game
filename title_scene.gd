@@ -11,5 +11,6 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_button_pressed() -> void:
+
+func _on_start_btn_pressed() -> void:
 	SceneTransition.change_scene("res://exposition.tscn")

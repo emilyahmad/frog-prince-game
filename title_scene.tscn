@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkqqruexvsouo"]
+[gd_scene load_steps=5 format=3 uid="uid://bkqqruexvsouo"]
 
 [ext_resource type="Script" uid="uid://c3cvp1hcj03hj" path="res://title_scene.gd" id="1_176dl"]
 [ext_resource type="Texture2D" uid="uid://jj3gwef0wfkp" path="res://assets/title.png" id="1_wkkv4"]
+[ext_resource type="Texture2D" uid="uid://dumjl74ki5qog" path="res://assets/start-btn/start.png" id="3_uah43"]
+[ext_resource type="Texture2D" uid="uid://uwb5scjv7wk1" path="res://assets/start-btn/start-hover.png" id="4_wp7ut"]
 
 [node name="Title" type="Control"]
 layout_mode = 3
@@ -18,14 +20,16 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_wkkv4")
 
-[node name="Button" type="Button" parent="."]
-modulate = Color(1, 1, 1, 0)
+[node name="StartBtn" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 1010.0
-offset_top = 773.0
-offset_right = 1066.0
-offset_bottom = 804.0
-scale = Vector2(7.58587, 5.70008)
+offset_left = 906.0
+offset_top = 739.0
+offset_right = 1986.0
+offset_bottom = 1140.0
+scale = Vector2(0.56, 0.56)
 mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_uah43")
+texture_hover = ExtResource("4_wp7ut")
+stretch_mode = 0
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]

@@ -4,11 +4,10 @@ var currentIndex := 0
 var length = len(exposition)
 
 var exposition: Array[String] = [
-	"Last night, I had the strangest dream...",
-	"There was a beautiful princess waiting beyond a vast swamp.",
-	"I had to journey across, find her, and give her a kiss.",
-	"And then I woke up... but it felt so real."
-	
+	"In a quiet little home, Frogyu sleeps peacefully through the night.",
+	"But tonight, a curious dream begins to take shape In the distance, a mysterious princess appears.",
+	"Though they share no words, his heart feels drawn to her.",
+	"Suddenly, Frogyu awakens from his dream. But the memory of the princess lingers in his mind. He must find her!"
 ]
 
 var expo_photos: Array[String] = [
@@ -27,11 +26,20 @@ func _ready() -> void:
 	$SkipTextButton.position = Vector2(1492, 42)
 
 	var stylebox = StyleBoxTexture.new()
+	
+	stylebox.content_margin_right = 100
+	stylebox.content_margin_left = 100
+	
+	stylebox.content_margin_top = 50
+	stylebox.content_margin_bottom = 50
+	
 	stylebox.texture = preload("res://assets/wooden.png")
-	# Apply the override to the "normal" style
-	$SlideLabel.add_theme_stylebox_override("normal", stylebox)
+	
 	$SlideLabel.add_theme_color_override("default_color", Color("#61453A"))
 	$SlideLabel.add_theme_font_size_override("normal_font_size", 46)
+	
+	$SlideLabel.add_theme_stylebox_override("normal", stylebox)
+	
 	$SkipTextButton.pressed.connect(_skip_text)
 
 func _skip_text():
