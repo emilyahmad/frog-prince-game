@@ -2,7 +2,7 @@
 
 ### classic platformer that follows a frog's dream to find its princess. It similar to the story of the princess and the frog (idea from tongyu-gpt) with a small twist at the end!
 
-| <img width="1341" height="751" alt="Screenshot 2026-05-14 at 2 30 29 AM" src="https://github.com/user-attachments/assets/b629f016-1b22-4612-82c8-cce5b4b4ff6e" | <img width="1341" height="751" alt="Screenshot 2026-05-14 at 2 30 53 AM" src="https://github.com/user-attachments/assets/04b2e748-cc9c-42f0-aa64-58c361a64a0e" /> |
+| <img width="1341" height="751" alt="Screenshot 2026-05-14 at 2 30 29 AM" src="https://github.com/user-attachments/assets/b629f016-1b22-4612-82c8-cce5b4b4ff6e"/> | <img width="1341" height="751" alt="Screenshot 2026-05-14 at 2 30 53 AM" src="https://github.com/user-attachments/assets/04b2e748-cc9c-42f0-aa64-58c361a64a0e" /> |
 | --- | --- |
 | <img width="1341" height="751" alt="Screenshot 2026-05-14 at 2 32 20 AM" src="https://github.com/user-attachments/assets/cc4d8e4f-f18b-4e9b-a498-3d66416d646b" /> | <img width="1341" height="751" alt="Screenshot 2026-05-14 at 2 32 43 AM" src="https://github.com/user-attachments/assets/e2dd1bdd-35c0-41bb-afb2-6c091447e079" /> |
 
