@@ -9,4 +9,4 @@ Platformer that follows a frog's dream to find its princess. It similar to the s
 ### About
 Submission for Hack Club Sleepover, an all-girls hackathon in Chicago on April 24-26, 2026. The theme was 'in your dreams', Tongyu came up with the idea of a game that follows a frog who has a dream about his princess (like the princess and the frog fairy tale), wakes up and then the player can rescue her. Where there's Tongyu there's ceiling, so we incorporated it at the end as the princess 'frogyu' saves. The game itself consists of two real platformer levels, one in a forest/swampy biome with bouncy mushrooms and sinking lilypad the player 'parkours' through (can't swim/fall in the water!) to reach a giant mushroom at the end, which transports the player to the sky level. The sky level is much more serene, the player hops on clouds and can uber to the end scene with the help of some birds.
 
-Art made by Aariana Shah
+Art made by @AarianaShah
